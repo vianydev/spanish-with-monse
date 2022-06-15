@@ -1,0 +1,29 @@
+#banner-clase-muestra {
+    background: var(--gradient);
+
+}
+.banner-clase-muestra {
+    margin: auto;
+    width: 90%;
+    height: 455px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner-clase-muestra h2 {
+    margin: 0px;
+}
+.banner-clase-muestra h2,
+.banner-clase-muestra p {
+    max-width: 900px;
+    color: white;
+}
+.banner-clase-muestra p {
+    font-size: 1.2rem;
+}
+@media only screen and (min-width: 620px){
+    .banner-clase-muestra p {
+        font-size: 1.6rem;
+    }
+}
