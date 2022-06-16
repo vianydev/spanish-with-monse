@@ -33,31 +33,32 @@ const Navbar = () => {
 
     return (
         <nav id='nav'>
-           <img className='nav-logo' src={logo} alt='logo' />
+            <img className='nav-logo' src={logo} alt='logo' />
 
-           <div className='nav-links'>
-               <a className='nav-link'
+            <div className='nav-links'>
+                <a className='nav-link'
                     href="#nav">¿Cómo comenzar?</a>
                     <a className='nav-link'
                         href="#nav">Acerca de mi</a>
-
-           </div>
-           
-           <div className='nav-buttons'>
+            </div>
+            
+            <div className='nav-buttons'>
                 <div className="dropdown">
                     <button className="dropbtn"
-                        onClick={setLanguage}> Spanish 
+                        onClick={setLanguage}> Español 
                         <img className='icon-down' src={down} alt="down" /> 
                     </button>
                     <div className="dropdown-content"
                         style={{display: "none"}}>
-                        <a href="#nav" >Spanish</a>
+                        <a href="#nav" >Español</a>
                         <a href="#nav" >English</a>
                     </div>
                 </div>
-                <button 
-                    className='gradient-btn'>Reservar clase muestra</button>
-           </div>
+
+                <a className='nav-link link-purple nav-right' href='#nav'>Ingresar</a>
+                
+                <button className='purple-btn'>Reservar clase</button>
+            </div>
            
           {/* Nav for mobile */}
            <div className='nav-mobile'>
@@ -69,18 +70,16 @@ const Navbar = () => {
                 <div className='nav-mobile-menu'
                     style={{display: "none"}}>
                     <div className='nav-mobile-menu-content'>
-                        <div className='link-purple'>
-                            <a href='#nav'>Ingresar</a>
-                        </div>
+                        <a className='nav-link link-purple' href='#nav'>Ingresar</a>
 
                         <div className="dropdown">
                             <button className="dropbtn"
-                                onClick={setLanguageMobile}> Spanish 
+                                onClick={setLanguageMobile}> Español 
                                 <img className='icon-down' src={down} alt="down" /> 
                             </button>
                             <div className="dropdown-content-mobile"
                                 style={{display: "none"}}>
-                                <a href="#nav" >Spanish</a>
+                                <a href="#nav" >Español</a>
                                 <a href="#nav" >English</a>
                             </div>
                         </div>
@@ -93,7 +92,7 @@ const Navbar = () => {
                         </div>
                     
                         <button 
-                            className='purple-btn'>Reservar clase muestra
+                            className='purple-btn'>Reservar clase
                         </button>
                     </div>
                     

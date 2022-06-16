@@ -1,5 +1,7 @@
-import mail from '../images/icons/mail-outline.png';
-import whatsapp from '../images/icons/whatsapp-outline.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+
 
 const Contact = () => {
   return (
@@ -8,12 +10,12 @@ const Contact = () => {
         <div className="contact-container">
             <h2>¿Necesitas más información?</h2>
             <div className='contact-box'>
-                <img src={mail} />
+                <FontAwesomeIcon className='fa-social-icon' icon={faEnvelope} />
                 <p className='contact-text'>smonse.rr@gmail.com</p>
             </div>
             <div className='contact-box'>
-                <img src={whatsapp} />
-                <p className='contact-text'>smonse.rr@gmail.com</p>
+                <FontAwesomeIcon className='fa-social-icon' icon={faWhatsapp} />
+                <p className='contact-text'>+521 921 144 6166</p>
             </div>
         </div>
       </section>

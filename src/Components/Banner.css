@@ -1,11 +1,11 @@
 #banner-clase-muestra {
-    background: var(--gradient);
-
+    margin-top: 50px;
+    /* background: var(--gradient); */
 }
 .banner-clase-muestra {
     margin: auto;
     width: 90%;
-    height: 455px;
+    height: 440px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,6 +21,9 @@
 }
 .banner-clase-muestra p {
     font-size: 1.2rem;
+}
+#hero-btn {
+    margin: 20px 10px;
 }
 @media only screen and (min-width: 620px){
     .banner-clase-muestra p {

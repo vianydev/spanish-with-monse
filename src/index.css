@@ -24,6 +24,7 @@
   --grandient-vlight: linear-gradient(180deg, rgba(1, 101, 92, 0.8) 0%, #7060C1 100%);
   --shadow1: 0px 2px 8px rgba(0, 0, 0, 0.25);
   --shadow2: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  --shadow-solid: 0px 2px 0px rgba(0, 0, 0, 0.1);
 }
 html, 
 body {
@@ -108,13 +109,13 @@ button {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 14px 40px;
-  gap: 10px;
+  padding: 12px 30px;
+  gap: 5px;
   margin: 0 5px;
 
   color: white;
   box-shadow: var(--shadow1);
-  border-radius: 40px;
+  border-radius: 35px;
   border: none;
 
   font-family: 'Open Sans';
@@ -125,18 +126,46 @@ button {
 }
 .purple-btn{
   background-color: var(--purple);
+  border: 2px solid var(--purple);
 }
-.green-btn {
-  background-color: var(--green);
+.purple-btn:hover {
+  border: 2px solid var(--purple);
+  color: var(--purple);
+  background: transparent;
+}
+.purple-btn:active {
+  border: 2px solid var(--dark-purple);
+  color: white;
+  background: var(--dark-purple);
 }
 .pink-btn {
   background-color: var(--pink);
+  border: 2px solid var(--pink);
+}
+.pink-btn:hover {
+  border: 2px solid var(--pink);
+  color: var(--pink);
+  background: transparent;
+}
+.pink-btn:active {
+  border: 2px solid var(--dark-pink);
+  color: white;
+  background: var(--dark-pink);
 }
 .outline-purple {
-  
-  border: 1px solid var(--purple);
+  border: 2px solid var(--purple);
   color: var(--purple);
   background: transparent;
+}
+.outline-purple:hover {
+  border: 2px solid var(--purple);
+  color: white;
+  background: var(--purple);
+}
+.outline-purple:active {
+  border: 2px solid var(--dark-purple);
+  color: white;
+  background: var(--dark-purple);
 }
 .gradient-btn {
   background: var(--gradient-vertical);
@@ -153,11 +182,13 @@ button {
   text-transform: uppercase;
   border-bottom: 1px solid;
 }
+
+
 /* Highlight text with gradient */
 .highlight {
   animation: gradient-fill 5s linear infinite;
   transform: translateZ(0);
-  background-size: 200% 200%;
+  background-size: 100% 100%;
   background-image: var(--gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

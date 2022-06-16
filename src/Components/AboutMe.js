@@ -1,7 +1,11 @@
 import './AboutMe.css';
 import profilePicture from "../images/profile-circulo.png";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 const AboutMe = () => {
+  
   return (
       <section id="about-me">
         <div className='about-me-container'>
@@ -18,19 +22,19 @@ const AboutMe = () => {
           </div>
 
           <div className='social-icons'>
-
             <a href='mailto:smonse.rr@gmail.com'>
               <div className='social-icon'>
-                <span class="material-symbols-outlined iconsize"></span> <h5 className='social-text'>smonse.rr@gmail.com</h5>
+                <FontAwesomeIcon className='fa-social-icon' icon={faEnvelope} />
+                <h5 className='social-text'>smonse.rr@gmail.com</h5>
               </div>
             </a>
 
             <a href='https://api.whatsapp.com/send?phone=529211446166'>
               <div className='social-icon'>
-                {/* <span class="material-symbols-outlined">mail</span> <h5 className='social-text'>smonse.rr@gmail.com</h5> */}
+                <FontAwesomeIcon className='fa-social-icon' icon={faWhatsapp} />
+                <h5 className='social-text'>+521 921 144 6166</h5>
               </div>
             </a>
-
           </div>
         </div>
       </section>

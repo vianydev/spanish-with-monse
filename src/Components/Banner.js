@@ -1,12 +1,15 @@
 import './Banner.css';
 
-const Banner = () => {
+const Banner = ({ title, text, color, pinkBtn }) => {
   return (
-      <section id='banner-clase-muestra'>
+      <section id='banner-clase-muestra' style={{
+        background: color
+        }}>
         <div className='banner-clase-muestra'>
-            <h2>Da el primer paso, reserva una clase muestra</h2>
-            <p>Descubre cómo es una clase y resuelve tus dudas en una clase totalmente gratuita.</p>
-            <button className='pink-btn'>Reservar clase muestra</button>
+            <h2>{title}</h2>
+            <p>{text}</p>
+            <button id='hero-btn' 
+              className={pinkBtn}>Reservar clase muestra</button>
         </div>
       </section>
   )
