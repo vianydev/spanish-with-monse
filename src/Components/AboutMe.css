@@ -34,7 +34,7 @@
     margin: 0;
     line-height: 1.7;
 }
-.social-icons {
+/* .social-icons {
     margin: 50px 10px;
 }
 .social-icon {
@@ -43,13 +43,18 @@
     align-items: center;
     color: var(--dark-gray);
 }
+.social-icon:hover {
+    color: var(--dark-green);
+}
 .svg-inline--fa {
     height: 30px;
     padding: 10px;
 }
 .social-text {
     margin: 0;
-}
+    font-size: 1.2rem;
+    font-weight: 900;
+} */
 
 @media only screen and (min-width: 620px){
     .about-me-text h2 {

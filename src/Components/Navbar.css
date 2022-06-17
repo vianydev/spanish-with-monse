@@ -78,7 +78,7 @@
   display: block;
 }
 .dropdown-content-mobile a:hover {
-  color: var(--green);
+  color: var(--dark-green);
 }
 
 /* Dropdown Button Desktop */
@@ -127,7 +127,7 @@
     display: block;
   }
   .dropdown-content a:hover {
-    color: var(--green);
+    color: var(--dark-green);
   }
   @media only screen and (min-width: 650px){
     .nav-buttons {
@@ -158,7 +158,7 @@
       margin: 0 10px;
     }
     .nav-link:hover {
-      color: var(--green);
+      color: var(--dark-green);
       text-decoration: underline;
     }
   }

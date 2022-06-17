@@ -26,6 +26,9 @@
   --shadow2: 0px 4px 10px rgba(0, 0, 0, 0.15);
   --shadow-solid: 0px 2px 0px rgba(0, 0, 0, 0.1);
 }
+::selection {
+  background: var(#02c9b859);
+}
 html, 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -87,7 +90,7 @@ a {
   color: var(--dark-gray);
 }
 a:hover {
-  color: var(--green);
+  color: var(--dark-green);
 }
 @media only screen and (min-width: 750px){
   body {
@@ -264,33 +267,50 @@ button {
     max-width: 950px;
   }
 }
-/* Contact */
-#contact {
-  background-color: var(--bg-light-green);
+
+/* Social icons */
+.social-icons-footer{
+  display: inline-flex;
+  justify-content: center;
 }
-.line-top-green {
-  height: 100px;
-  content: " ";
-  width: 100%;
-  position: relative;
-  top: -77px;
-  left: 0px;
-  background: url(./images/forms/Rectangle-green-top-mobile.svg) no-repeat center;
-  background-size: contain;
+.social-icons {
+  margin: 50px 10px;
 }
-.contact-container {
-  height: 400px;
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--dark-gray);
+}
+.social-icon:hover {
+  color: var(--dark-green);
+}
+.svg-inline--fa {
+  height: 30px;
+  padding: 10px;
+}
+.social-text {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+/* Footer */
+#footer {
+  background: var(--black);
+}
+.footer-container {
+  padding: 10px;
+}
+.footer-box {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
 }
-.contact-text {
-  margin-top: 0px;
-}
-@media only screen and (min-width: 620px) {
-  .line-top-green {
-    height: 200px;
-    background: url(./images/forms/Rectangle-green-top-desktop.svg) no-repeat center;
-    background-size: cover;
-  }
+.nav-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }

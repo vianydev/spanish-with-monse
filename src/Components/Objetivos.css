@@ -89,7 +89,7 @@
         justify-content: center;
     }
 }
-@media only screen and (min-width: 1088px){
+@media only screen and (min-width: 1118px){
     .objetivos-container {
         height: 1050px;
     }

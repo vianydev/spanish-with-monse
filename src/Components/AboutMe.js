@@ -22,17 +22,19 @@ const AboutMe = () => {
           </div>
 
           <div className='social-icons'>
-            <a href='mailto:smonse.rr@gmail.com'>
+            <a className='social-link' 
+              href='mailto:smonse.rr@gmail.com'>
               <div className='social-icon'>
                 <FontAwesomeIcon className='fa-social-icon' icon={faEnvelope} />
-                <h5 className='social-text'>smonse.rr@gmail.com</h5>
+                <p className='social-text'>smonse.rr@gmail.com</p>
               </div>
             </a>
 
-            <a href='https://api.whatsapp.com/send?phone=529211446166'>
+            <a className='social-link' 
+              href='https://api.whatsapp.com/send?phone=529211446166'>
               <div className='social-icon'>
                 <FontAwesomeIcon className='fa-social-icon' icon={faWhatsapp} />
-                <h5 className='social-text'>+521 921 144 6166</h5>
+                <p className='social-text'>+521 921 144 6166</p>
               </div>
             </a>
           </div>
