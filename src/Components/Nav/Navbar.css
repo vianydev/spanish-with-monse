@@ -37,10 +37,18 @@
 .nav-links-mobile a {
   padding: 10px;
 }
+
 .nav-buttons {
   display: none;
 }
-
+.sign-right {
+  display: inline-flex;
+  align-items: ;
+  margin: 20px 10px;
+}
+.sign-right p {
+  margin: 0 10px 0 0;
+}
 .nav-mobile-menu {
   position: absolute;
   top: 110%;
@@ -149,7 +157,7 @@
 
   @media only screen and (min-width: 990px){
     #nav {
-      justify-content: space-evenly;
+      justify-content: space-around;
     }
     .nav-links {
       display: block;

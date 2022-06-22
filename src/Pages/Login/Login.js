@@ -50,6 +50,7 @@ const Login = ( { handleRoute }) => {
         <section id="login">
            <div id="form" className="login">
                 <h1>¡Hola!</h1>
+                <h3> Ingresa a tu cuenta</h3>
                 <Form
                 buttonText={'Entrar'}
                 enabledName='disabled' 
@@ -63,13 +64,9 @@ const Login = ( { handleRoute }) => {
                 // submitRegister={submitRegister}
 
                 />
-                 <div className='login-link'>
+                <div className='login-link'>
                     <div>
-                        Forgot your password?  
-                        <a className='link-purple'
-                        href='#nav'
-                        onClick={() => console.log()}
-                        >Reset password</a>
+                        <a href='#nav' onClick={() => console.log()} >Forgot your password?</a>
                     </div>     
                     <div>
                         Don’t have an account yet? 

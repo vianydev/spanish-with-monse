@@ -380,9 +380,10 @@ button {
   }
 }
 
-/* Forms */
+/* Forms & Pages*/
 #register, 
-#login {
+#login,
+#dashboard {
   margin-top: 100px;
   height: 1010px;
 }
@@ -397,4 +398,17 @@ button {
 }
 .login-link a {
   margin: 0 0 0 5px;
+}
+@media only screen and (min-width: 650px) {
+  .login-link {
+    margin: 70px auto;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* Dashboard style */
+#dashboard h1 {
+  margin-bottom: 0;
 }

@@ -3,7 +3,7 @@ import rocket from "../../Assets/icons/goal-rocket.png";
 import conversation from "../../Assets/icons/goal-conversation.png";
 import next from "../../Assets/icons/goal-next.png";
 
-const Objetivos = () => {
+const Objetivos = ({ handleRoute }) => {
   return (
     <section id="objetivos">
         <div className="objetivos-container">
@@ -30,7 +30,8 @@ const Objetivos = () => {
                                 <li>Entiendes un poco pero no conoces la gramatica.</li>
                             </ul>
                         </div>
-                        <button className="outline-purple">Más información</button>
+                        <button className="outline-purple"
+                            onClick={()=>handleRoute('register')}>Más información</button>
                     </div>
                 </div>
                 <div className="objetivos-box">
@@ -52,7 +53,8 @@ const Objetivos = () => {
                                 <li>Quieres hablar de temas especializados o tecnicos.</li>
                             </ul>
                         </div>
-                        <button className="outline-purple">Más información</button>
+                        <button className="outline-purple"
+                            onClick={()=>handleRoute('register')}>Más información</button>
                     </div>
                 </div>
                 <div className="objetivos-box">
@@ -74,7 +76,9 @@ const Objetivos = () => {
                                 <li>Quieres mejorar tu español.</li>
                             </ul>
                         </div>
-                        <button className="outline-purple">Más información</button>
+                        <button className="outline-purple"
+                        onClick={()=>handleRoute('register')}
+                        >Más información</button>
                     </div>
                 </div>
             </div>
