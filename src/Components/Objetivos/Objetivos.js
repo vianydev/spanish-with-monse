@@ -1,7 +1,7 @@
 import "./Objetivos.css";
-import rocket from "../images/icons/goal-rocket.png";
-import conversation from "../images/icons/goal-conversation.png";
-import next from "../images/icons/goal-next.png";
+import rocket from "../../Assets/icons/goal-rocket.png";
+import conversation from "../../Assets/icons/goal-conversation.png";
+import next from "../../Assets/icons/goal-next.png";
 
 const Objetivos = () => {
   return (

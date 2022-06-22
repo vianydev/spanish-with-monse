@@ -1,10 +1,10 @@
 import "./Beneficios.css";
-import time from "../images/icons/time.png";
-import person from "../images/icons/person.png";
-import place from "../images/icons/place.png";
-import check from "../images/icons/check.png";
-import pin from "../images/icons/pin.png";
-import lightbulb from "../images/icons/lightbulb.png";
+import time from "../../Assets/icons/time.png";
+import person from "../../Assets/icons/person.png";
+import place from "../../Assets/icons/place.png";
+import check from "../../Assets/icons/check.png";
+import pin from "../../Assets/icons/pin.png";
+import lightbulb from "../../Assets/icons/lightbulb.png";
 
 const Beneficios = () => {
   return (

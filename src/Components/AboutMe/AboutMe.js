@@ -1,5 +1,5 @@
 import './AboutMe.css';
-import profilePicture from "../images/profile-circulo.png";
+import profilePicture from "../../Assets/images/profile-circulo.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';

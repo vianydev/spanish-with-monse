@@ -1,0 +1,80 @@
+.form  {
+    margin: 10px auto;
+    padding: 20px;
+    max-width: 660px;
+    /* height: 630px; */
+    
+    background: var(--bg-light-green);
+    border-radius: 10px;
+    box-shadow: var(--shadow2);
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#form h1 {
+    margin: 0;
+}
+.form-box {
+    margin: 20px 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.form-box p {
+    margin: .5rem 0;
+    font-size: 1rem;
+    font-weight: 900;
+}
+input[type="text"], 
+input[type="email"],
+input[type="password"],
+.form-box select,
+.form-box option {
+    font-size: 1rem;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    color: var(--gray);
+}
+.form-box input,
+.form-box select {
+    padding: 16px 10px; 
+    
+    background: white;
+    
+    text-align: left;
+
+    border: solid 1px var(--light-gray);
+    border-radius: 8px;
+    box-shadow: none;
+
+    appearance: none;
+}
+.form-box input:focus-visible,
+.form-box select:focus-visible{
+    outline: 2px solid var(--green);
+}
+#select {
+    position: relative;
+}
+.custom-arrow {
+    position: absolute;
+    top: 60%;
+    right: 0;
+    display: block;
+    height: 1rem;
+    width: 1rem;
+
+    pointer-events: none;
+}
+.btn-register-box {
+    display: block;
+    align-self: center;
+}
+.btn-register-box button {
+    margin: auto;
+}
+
+
+
+

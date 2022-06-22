@@ -76,14 +76,14 @@
       position: absolute;
       top: 486px;
       left: 0px;
-      background: url(../images/forms/Rectangle-purple-top-desktop.svg) no-repeat center;
+      background: url(../../Assets/Shapes/Rectangle-purple-top-desktop.svg) no-repeat center;
       background-size: cover;
     }
     .line-bottom {
       height: 200px;
       top: 50px;
       left: 0px;
-      background: url(../images/forms/Rectangle-purple-white-bottom-desktop.svg) no-repeat center;
+      background: url(../../Assets/Shapes/Rectangle-purple-white-bottom-desktop.svg) no-repeat center;
       background-size: cover;
     }
   }
