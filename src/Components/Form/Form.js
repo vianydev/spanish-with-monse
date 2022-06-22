@@ -1,10 +1,13 @@
 import './Form.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
-import Button from '../Button';
 
 const Form = ( {
+        color,
+        buttonType,
+        buttonValue,
         buttonText, 
+        actionButton,
         enabledName, 
         enabledEmail, 
         enabledPassword, 
@@ -13,7 +16,6 @@ const Form = ( {
         handleEmail,  
         handlePassword,
         handleGoal,
-        submitRegister
     }) => {
         
 
@@ -29,7 +31,7 @@ const Form = ( {
                     name="user-name"
                     placeholder="*Name"
                     onChange={handleName} 
-                    required />
+                     />
             </div>
             <div 
                 className='form-box' 
@@ -41,7 +43,7 @@ const Form = ( {
                 name="email" 
                 placeholder="*E-mail" 
                 onChange={handleEmail} 
-                required />
+                 />
             </div>
             <div 
                 className='form-box'
@@ -53,7 +55,7 @@ const Form = ( {
                 name="password" 
                 placeholder="*Password" 
                 onChange={handlePassword} 
-                required />
+                 />
             </div>
             <div 
                 id='select' 
@@ -64,7 +66,7 @@ const Form = ( {
                     className='goals' 
                     name='goals' 
                     onChange={handleGoal}
-                    required> 
+                    > 
                     <option value="">*Select your goal</option>
                     <option value='beginners'>Begginers</option>
                     <option value='conversation'>Conversation</option>
@@ -73,13 +75,12 @@ const Form = ( {
                 <FontAwesomeIcon className='custom-arrow' icon={faChevronDown} />
             </div>
             <div className='form-box btn-register-box'>
-                <Button 
-                    color='outline-purple'
-                    buttonText={buttonText}
-                    type="submit" 
-                    value="Submit" 
-                    onClick={submitRegister}
-                />
+                <button 
+                    className={color}
+                    type={buttonType} 
+                    value={buttonValue} 
+                    onClick={actionButton}>
+                    {buttonText}</button>
             </div>
         </form>
     )

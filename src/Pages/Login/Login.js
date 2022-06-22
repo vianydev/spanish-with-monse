@@ -1,50 +1,7 @@
-import { useState } from 'react';
 import Form from '../../Components/Form/Form';
 
 
 const Login = ( { handleRoute }) => {
-    // // Register User
-    // const [user, setUser] = useState({
-    //     name: 'vianey',
-    //     email: 'viany@gmail.com',
-    //     password: '123',
-    //     goal: 'begginer' 
-    // }); 
-
-
-    // const [name, setName] = useState('');
-    // const handleName = (e) => {
-    //     setName(e.target.value);
-    //     console.log(name)
-    // }
-    // const [email, setEmail] = useState('');
-    // const handleEmail = (e) => {
-    //     setEmail(e.target.value);
-    //     console.log(email)
-    // }
-    // const [password, setPassword] = useState('');
-    // const handlePassword = (e) => {
-    //     setPassword(e.target.value);
-    //     console.log(password)
-    // }
-    // const [goal, setGoal] = useState('');
-    // const handleGoal = (e) => {
-    //     setGoal(e.target.value);
-    //     console.log(goal)
-    // }
-
-
-    // const submitRegister = () => {
-    //     console.log("submit")
-    //     setUser({...{
-    //         name: name,
-    //         email: email,
-    //         password: password,
-    //         goal: goal
-    //     }})
-    //     console.log(user)
-        
-    // }
 
     return (
         <section id="login">
@@ -52,7 +9,11 @@ const Login = ( { handleRoute }) => {
                 <h1>¡Hola!</h1>
                 <h3> Ingresa a tu cuenta</h3>
                 <Form
+                color={'outline-purple'}
+                // buttonType={'submit'}
+                // buttonValue={'submit'}
                 buttonText={'Entrar'}
+                actionButton={()=>handleRoute('dashboard')}
                 enabledName='disabled' 
                 enabledEmail='enabled' 
                 enabledPassword='enabled' 

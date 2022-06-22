@@ -4,12 +4,12 @@ import Form from '../../Components/Form/Form';
 
 const Register = ({ handleRoute }) => {
     // Register User
-    const [user, setUser] = useState({
-        name: 'vianey',
-        email: 'viany@gmail.com',
-        password: '123',
-        goal: 'begginer' 
-    }); 
+    // const [user, setUser] = useState({
+    //     name: 'vianey',
+    //     email: 'viany@gmail.com',
+    //     password: '123',
+    //     goal: 'begginer' 
+    // }); 
 
     const [name, setName] = useState('');
     const handleName = (e) => {
@@ -32,15 +32,8 @@ const Register = ({ handleRoute }) => {
         console.log(goal)
     }
 
-    const submitRegister = () => {
-        console.log("submit")
-        setUser({...{
-            name: name,
-            email: email,
-            password: password,
-            goal: goal
-        }})
-        console.log(user)
+    const actionButton = () => {
+        console.log("click on button")
     }
 
     return (
@@ -50,7 +43,11 @@ const Register = ({ handleRoute }) => {
                 <h3>Sign up to start learning Spanish</h3>
                 <p></p>
                 <Form
+                color={'outline-purple'}
+                // buttonType={"submit"}
+                // buttonValue={"submit"}
                 buttonText={'Crear cuenta'}
+                actionButton={()=>handleRoute('login')}
                 enabledName='enabled' 
                 enabledEmail='enabled' 
                 enabledPassword='enabled' 
@@ -59,7 +56,6 @@ const Register = ({ handleRoute }) => {
                 handleEmail={handleEmail}
                 handlePassword={handlePassword}
                 handleGoal={handleGoal}
-                submitRegister={submitRegister}
 
                 />
                 <div className='login-link'>

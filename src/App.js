@@ -1,14 +1,12 @@
 import './App.css';
 import { React, useState } from 'react';
-import Navbar from './Components/Nav/Navbar';
-import NavSignOut from './Components/Nav/NavSignOut';
-import NavSignIn from './Components/Nav/NavSignIn';
 import Main from './Pages/Main/Main';
 import Register from './Pages/Register/Register';
 import Login from './Pages/Login/Login';
 import Dashboard from './Pages/Dashboard/Dashboard';
 import Footer from './Components/Footer/Footer';
 import ScrollButton from './Components/ScrollButton';
+import Navigation from './Components/Nav/Navigation';
 
 function App() {
     
@@ -20,36 +18,33 @@ function App() {
       setRoute('dashboard');
     } else if (route === 'login'){
       setRoute('login');
-      setIsLogin(true);
+      // setIsLogin(true);
     } else if (route === 'register'){
       setRoute('register');
-    } else {
-      setRoute('main');
+    } else if (route === 'signout'){
+      setRoute('signout');
+      setIsLogin(false);
     }
+    setRoute(route);
+    
   }
 
-  // Handle Log in
+  //Log in
   const [isLogin, setIsLogin] = useState(false);
 
 
   return (
     <div className="App">
       {/* Set Nav */}
-      { route === "register" ? 
-        <NavSignIn
-        handleRoute={handleRoute} />
-      : route === "dashboard" ?
-        <NavSignOut 
-        route={route}
-        handleRoute={handleRoute}  />
-      : <Navbar 
-        route={route}
-        handleRoute={handleRoute}  /> 
-      }
+      <Navigation 
+        route={route} 
+        handleRoute={handleRoute} 
+        isLogin={isLogin} />
+
       {/* Set content */}
       { 
-        route === "main" ? 
-        <Main handleRoute={handleRoute} />
+        route === "main" 
+        ? <Main handleRoute={handleRoute} />
         : route === "register" ?  
         <Register handleRoute={handleRoute} />
         : route === "dashboard" ?  

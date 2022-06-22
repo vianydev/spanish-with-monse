@@ -7,7 +7,6 @@ const NavSignOut = ({ handleRoute }) => {
         <nav id='nav'>
             {/* Desktop Nav */}
             <img className='nav-logo'
-                onClick={() => handleRoute('main')}
                 src={logo}
                 alt='logo' />
 
@@ -16,7 +15,7 @@ const NavSignOut = ({ handleRoute }) => {
                 
                 <a className='link-purple'
                 href='#Nav'
-                onClick={() => handleRoute("login")}
+                onClick={() => handleRoute("main")}
                 >Salir</a>
             </div>       
         </nav>

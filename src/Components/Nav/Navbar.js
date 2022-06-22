@@ -3,11 +3,9 @@ import down from '../../Assets/icons/down.png';
 import iconHamburger from '../../Assets/icons/hamburger.png';
 import iconX from '../../Assets/icons/x.png';
 import './Navbar.css';
-import RegisterButton from '../RegisterButton';
+// import RegisterButton from '../RegisterButton';
 
-const Navbar = ({ route, handleRoute }) => {
-
-
+const Navbar = ({ handleRoute, isLogin }) => {
 
     const setLanguage = () => {
         console.log("click on language")
@@ -68,7 +66,10 @@ const Navbar = ({ route, handleRoute }) => {
                     onClick={() => handleRoute("login")}
                 >Ingresar</a>
 
-                <RegisterButton handleRoute={handleRoute}></RegisterButton>
+                <button className='purple-btn' 
+                    onClick={() => handleRoute("register")}
+                    > Reservar clase
+                </button>   
             </div>
 
             {/* Nav for mobile */}
@@ -105,7 +106,10 @@ const Navbar = ({ route, handleRoute }) => {
                                 href="#nav">Contacto</a>
                         </div>
 
-                        <RegisterButton handleRoute={handleRoute}></RegisterButton>
+                        <button className='purple-btn' 
+                            onClick={() => handleRoute("register")}
+                            > Reservar clase
+                        </button>
                     </div>
 
                 </div>
