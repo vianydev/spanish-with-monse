@@ -7,6 +7,8 @@ import Dashboard from './Pages/Dashboard/Dashboard';
 import Footer from './Components/Footer/Footer';
 import ScrollButton from './Components/ScrollButton';
 import Navigation from './Components/Nav/Navigation';
+import SignOut from './Pages/SignOut/SignOut';
+import Error404 from './Pages/Error/Error404'
 
 function App() {
     
@@ -16,6 +18,7 @@ function App() {
   const handleRoute = (route) => {
     if(route === 'dashboard') {
       setRoute('dashboard');
+      setIsLogin(true);
     } else if (route === 'login'){
       setRoute('login');
       // setIsLogin(true);
@@ -51,9 +54,9 @@ function App() {
         <Dashboard />
         : route === "login" ?  
         <Login handleRoute={handleRoute} />
-        :  <section>
-            <h1> Testing route 404</h1>
-        </section>
+        : route === "signout" ?  
+        <SignOut handleRoute={handleRoute} />  
+        : <Error404 />
       }
       {/* Footer */}
       <Footer />

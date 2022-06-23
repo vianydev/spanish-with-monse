@@ -15,7 +15,7 @@ const NavSignOut = ({ handleRoute }) => {
                 
                 <a className='link-purple'
                 href='#Nav'
-                onClick={() => handleRoute("main")}
+                onClick={() => handleRoute("signout")}
                 >Salir</a>
             </div>       
         </nav>
