@@ -1,8 +1,7 @@
 .form  {
     margin: 10px auto;
     padding: 20px;
-    max-width: 660px;
-    /* height: 630px; */
+    max-width: 560px;
     
     background: var(--bg-light-green);
     border-radius: 10px;
@@ -17,7 +16,7 @@
     margin: 0;
 }
 .form-box {
-    margin: 20px 10px;
+    margin: 20px 10px 10px 10px;
     display: grid;
     grid-template-columns: 1fr;
 }
@@ -54,6 +53,10 @@ input[type="password"],
 .form-box select:focus-visible{
     outline: 2px solid var(--green);
 }
+.form-box input:invalid,
+.form-box select:invalid{
+    outline: 2px solid var(--red);
+}
 #select {
     position: relative;
 }
@@ -74,7 +77,13 @@ input[type="password"],
 .btn-register-box button {
     margin: auto;
 }
-
+.err {
+    margin: 0;
+    padding: 0 0 0 20px;
+    text-align: left;
+    font-size: 14px;
+    color: var(--error);
+}
 
 
 

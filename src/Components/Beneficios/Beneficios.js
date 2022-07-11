@@ -1,10 +1,11 @@
 import "./Beneficios.css";
-import time from "../../Assets/icons/time.png";
-import person from "../../Assets/icons/person.png";
-import place from "../../Assets/icons/place.png";
-import check from "../../Assets/icons/check.png";
-import pin from "../../Assets/icons/pin.png";
-import lightbulb from "../../Assets/icons/lightbulb.png";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faClock } from '@fortawesome/free-regular-svg-icons';
+import { faListCheck } from '@fortawesome/free-solid-svg-icons';
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { faComments } from '@fortawesome/free-solid-svg-icons';
+import { faLightbulb } from '@fortawesome/free-solid-svg-icons';
+import { faThumbTack } from '@fortawesome/free-solid-svg-icons';
 
 const Beneficios = () => {
   return (
@@ -17,8 +18,7 @@ const Beneficios = () => {
           {/* Avanza a tu ritmo */}
           <div className="beneficios-box">
             <div className="beneficios-img">
-              <img src={time}
-                alt="avanza-a-tu-ritmo"/>
+              <FontAwesomeIcon className="icon-beneficios" icon={faClock} />
             </div>
             <div className="beneficios-box-text">
               <h4>Avanza a tu ritmo</h4>
@@ -28,8 +28,7 @@ const Beneficios = () => {
           {/* Conversaciones reales */}
           <div className="beneficios-box">
             <div className="beneficios-img">
-              <img src={person}
-                alt="Conversaciones-reales"/>
+              <FontAwesomeIcon className="icon-beneficios" icon={faComments} />
             </div>
             <div className="beneficios-box-text">
               <h4>Conversaciones reales</h4>
@@ -39,8 +38,7 @@ const Beneficios = () => {
           {/* Desde cualquier lugar */}
           <div className="beneficios-box">
             <div className="beneficios-img">
-              <img src={place}
-                alt="Desde-cualquier-lugar"/>
+              <FontAwesomeIcon className="icon-beneficios" icon={faLocationDot} />
             </div>
             <div className="beneficios-box-text">
               <h4>Desde cualquier lugar</h4>
@@ -50,8 +48,7 @@ const Beneficios = () => {
           {/* Just in Desktop */}
           <div className="beneficios-box beneficios-desktop">
             <div className="beneficios-img">
-              <img src={check}
-                alt="Desde-cualquier-lugar"/>
+              <FontAwesomeIcon className="icon-beneficios" icon={faListCheck} />
             </div>
             <div className="beneficios-box-text">
               <h4>Define tus objetivos</h4>
@@ -61,8 +58,7 @@ const Beneficios = () => {
           {/* temas de tu interes */}
           <div className="beneficios-box beneficios-desktop">
             <div className="beneficios-img">
-              <img src={pin}
-                alt="Temas-de-tu-interes"/>
+              <FontAwesomeIcon className="icon-beneficios" icon={faThumbTack} />
             </div>
             <div className="beneficios-box-text">
               <h4>Temas de tu interes</h4>
@@ -72,20 +68,17 @@ const Beneficios = () => {
           {/* Resuelve tus dudas */}
           <div className="beneficios-box beneficios-desktop">
             <div className="beneficios-img">
-              <img src={lightbulb}
-                alt="Temas-de-tu-interes"/>
+              <FontAwesomeIcon className="icon-beneficios" icon={faLightbulb} />
             </div>
             <div className="Resuelve-tus-dudas">
               <h4>Resuelve tus dudas</h4>
               <p>A diferencia de un video, en una clase privada puedes preguntar si algo no te quedó claro.</p>
             </div>
           </div>
-
         </div>
 
       </div>
       <div className="line-bottom"></div>
-        
     </section>
   )
 }

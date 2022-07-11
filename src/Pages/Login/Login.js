@@ -1,44 +1,26 @@
-import Form from '../../Components/Form/Form';
+import { Link } from 'react-router-dom';
+import LoginForm from '../../Components/Form/LoginForm';
 
 
-const Login = ( { handleRoute }) => {
+function Login ( { loadUser, setIsLog } ){    
 
     return (
         <section id="login">
            <div id="form" className="login">
                 <h1>¡Hola!</h1>
                 <h3> Ingresa a tu cuenta</h3>
-                <Form
-                color={'outline-purple'}
-                // buttonType={'submit'}
-                // buttonValue={'submit'}
-                buttonText={'Entrar'}
-                actionButton={()=>handleRoute('dashboard')}
-                enabledName='disabled' 
-                enabledEmail='enabled' 
-                enabledPassword='enabled' 
-                enabledGoals='disabled' 
-                // handleName={handleName}
-                // handleEmail={handleEmail}
-                // handlePassword={handlePassword}
-                // handleGoal={handleGoal}
-                // submitRegister={submitRegister}
 
-                />
+                <LoginForm loadUser={loadUser} setIsLog={setIsLog} />
+
                 <div className='login-link'>
-                    <div>
+                    <div style={{display: 'none'}}>
                         <a href='#nav' onClick={() => console.log()} >Forgot your password?</a>
                     </div>     
                     <div>
                         Don’t have an account yet? 
-                        <a className='link-purple'
-                        href='#nav'
-                        onClick={() => handleRoute("register")}
-                        >Sign up</a>
-                    </div>                    
-                                   
+                        <Link className='link-purple' to='/register'>Sign up</Link>
+                    </div>                        
                 </div>
-
             </div>
         </section>
     )

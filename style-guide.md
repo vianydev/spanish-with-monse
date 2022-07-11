@@ -43,9 +43,14 @@ The designs were created to the following widths:
 - dark-gray: #2C403D
 - black: #1A2523
 
+### Alerts
+- error: #d65454
+
 ### Shadows
 
---shadow1: box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+- shadow1: 0px 2px 8px rgba(0, 0, 0, 0.25);
+- shadow2: 0px 4px 10px rgba(0, 0, 0, 0.15);
+- shadow-solid: 0px 2px 0px rgba(0, 0, 0, 0.1);
 
 ## Typography
 

@@ -1,6 +1,7 @@
 .objetivos-container {
     height: 1850px;
     margin: 10px;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,7 +25,7 @@
 }
 .objetivos-box-content {
     width: 330px;
-    height: 500px;
+    height: 480px;
     border-radius: 8px;
     
     background-color: white;
@@ -44,6 +45,18 @@
     width: 80px;
     height: 80px;
     margin-bottom: 10px;
+
+    background: var(--gradient-vertical);
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.icon-objetivos {
+height: 30px;
+color: white;
+pointer-events: none;
 }
 .objetivos-text {
     width: 320px;
@@ -61,11 +74,15 @@
     height: 170px;
     margin-bottom: 10px;
 }
+.objetivos-list p {
+    margin: 16px 0 5px 0;
+}
 .objetivos-box-content ul {
     margin: 0;
 }
 .objetivos-box-content li {
     text-align: left;
+    padding: 4px 0;
 }
 @media only screen and (min-width: 620px){
     .objetivos-container {

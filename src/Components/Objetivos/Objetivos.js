@@ -1,22 +1,25 @@
+import { Link } from "react-router-dom";
 import "./Objetivos.css";
-import rocket from "../../Assets/icons/goal-rocket.png";
-import conversation from "../../Assets/icons/goal-conversation.png";
-import next from "../../Assets/icons/goal-next.png";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faRocket } from '@fortawesome/free-solid-svg-icons';
+import { faMessage } from '@fortawesome/free-solid-svg-icons';
+import { faArrowUpRightDots } from '@fortawesome/free-solid-svg-icons';
 
-const Objetivos = ({ handleRoute }) => {
+const Objetivos = () => {
   return (
-    <section id="objetivos">
+    <section id="objetivos"  data-scroll>
         <div className="objetivos-container">
             <div className="objetivos-title">
-                <h2>Clases totalmente enfocadas en alcanzar tus <span className="highlight">objetivos</span>.</h2>
+                <h2 data-splitting>Clases totalmente enfocadas en alcanzar tus <span className="highlight">objetivos</span>.</h2>
                 <h3>Para dar el siguiente paso, selecciona cual es el objetivo que te interesa alcanzar.</h3>
             </div>
             <div className="objetivos-container-box">
                 <div className="objetivos-box">
                     <div className="objetivos-box-content">
                         <div className="objetivos-img">
-                            <img src={rocket}
-                                alt="principiante"
+                            <FontAwesomeIcon 
+                                className="icon-objetivos" 
+                                icon={faRocket}
                             />
                         </div>
                         <div className="objetivos-text">
@@ -30,16 +33,12 @@ const Objetivos = ({ handleRoute }) => {
                                 <li>Entiendes un poco pero no conoces la gramatica.</li>
                             </ul>
                         </div>
-                        <button className="outline-purple"
-                            onClick={()=>handleRoute('register')}>Más información</button>
                     </div>
                 </div>
                 <div className="objetivos-box">
                     <div className="objetivos-box-content">
                         <div className="objetivos-img">
-                            <img src={conversation}
-                                alt="principiante-avanzado"
-                            />
+                            <FontAwesomeIcon className="icon-objetivos" icon={faMessage} />
                         </div>
                         <div className="objetivos-text">
                             <h4>Conversación</h4>
@@ -53,16 +52,12 @@ const Objetivos = ({ handleRoute }) => {
                                 <li>Quieres hablar de temas especializados o tecnicos.</li>
                             </ul>
                         </div>
-                        <button className="outline-purple"
-                            onClick={()=>handleRoute('register')}>Más información</button>
                     </div>
                 </div>
                 <div className="objetivos-box">
                     <div className="objetivos-box-content">
                         <div className="objetivos-img">
-                            <img src={next}
-                                alt="principiante-avanzado"
-                            />
+                            <FontAwesomeIcon className="icon-objetivos" icon={faArrowUpRightDots} />
                         </div>
                         <div className="objetivos-text">
                             <h4>Siguiente nivel</h4>
@@ -76,16 +71,16 @@ const Objetivos = ({ handleRoute }) => {
                                 <li>Quieres mejorar tu español.</li>
                             </ul>
                         </div>
-                        <button className="outline-purple"
-                        onClick={()=>handleRoute('register')}
-                        >Más información</button>
                     </div>
                 </div>
             </div>
+            <Link 
+                className="btn-shape link-purple" 
+                to='./register'
+                style={{padding: '20px 0 0 0'}}
+            >Book your class</Link>
         </div>
-        
     </section>
-
   )
 }
 

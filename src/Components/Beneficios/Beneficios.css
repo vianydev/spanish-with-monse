@@ -46,9 +46,19 @@
   .beneficios-desktop {
     display: none;
   }
-  .beneficios-img img {
+  .beneficios-img {
     width: 60px;
     height: 60px;
+    background: var(--gradient-vertical);
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon-beneficios {
+    height: 30px;
+    color: white;
   }
   
   

@@ -1,10 +1,13 @@
+import { Link } from 'react-router-dom';
 import './Banner.css';
 
 const Banner = ({ 
     title, 
     description,
     bgColor,
-    btnColor }) => {
+    btnColor,
+    btnDescription 
+}) => {
   return (
       <section id='banner-clase-muestra' style={{
         background: bgColor
@@ -12,8 +15,11 @@ const Banner = ({
         <div className='banner-clase-muestra'>
             <h2>{title}</h2>
             <p>{description}</p>
-            <button id='hero-btn' 
-              className={btnColor}>Reservar clase muestra</button>
+            <Link 
+              className={btnColor} 
+              to='./register'
+              style={{margin: '30px 10px 10px 10px'}}
+            >{btnDescription}</Link>
         </div>
       </section>
   )

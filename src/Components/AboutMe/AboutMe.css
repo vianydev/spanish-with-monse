@@ -1,6 +1,9 @@
 #about-me {
     margin: 70px 10px;
 }
+.about-me-container {
+    height: 850px;
+}
 .about-me-box {
     padding: 30px 15px;
     margin: auto;

@@ -1,22 +1,19 @@
+import { Link } from 'react-router-dom';
 import logo from '../../Assets/images/logo.png';
 import './Navbar.css';
 
-const NavSignOut = ({ handleRoute }) => {
-
+const NavSignOut = ({ handleLogOut }) => {
     return (
         <nav id='nav'>
             {/* Desktop Nav */}
-            <img className='nav-logo'
-                src={logo}
-                alt='logo' />
+            <Link className='nav-logo' to='/'>
+                <img src={logo} alt='logo' />
+            </Link>
 
             <div className='sign-right'>
                 {/* <p>Don’t have an account yet? </p> */}
-                
-                <a className='link-purple'
-                href='#Nav'
-                onClick={() => handleRoute("signout")}
-                >Salir</a>
+                <Link className='link-purple' to='/profile'>My profile</Link>
+                <Link className='link-purple' to='/signout' onClick={()=>handleLogOut()}>Salir</Link>
             </div>       
         </nav>
     )
