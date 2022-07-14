@@ -5,7 +5,7 @@ import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 
-const Footer = ({ checkLocation }) => {
+const Footer = ({ t }) => {
   return (
     <section id='footer'>
         <div className='footer-box'>
@@ -15,8 +15,8 @@ const Footer = ({ checkLocation }) => {
             </a>
 
             <div className='nav-footer'>
-                <Link className='nav-link' to={'/register'}>Book your class</Link>
-                <Link className='nav-link' to={'/login'}>Login</Link>
+                <Link className='nav-link' to={'/register'}>{t("buttons.book")}</Link>
+                  <Link className='nav-link' to={'/login'}>{t("buttons.loginAccount")}</Link>
             </div>
 
             <div className='social-icons-footer'>

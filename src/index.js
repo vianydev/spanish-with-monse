@@ -8,6 +8,9 @@ import "@fontsource/open-sans";
 import "@fontsource/open-sans/700.css"
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './i18n';
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

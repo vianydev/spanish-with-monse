@@ -3,6 +3,8 @@ import profilePicture from "../../Assets/images/profile-circulo.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { Trans } from 'react-i18next';
+import { t } from 'i18next';
 
 const AboutMe = () => {
   
@@ -15,9 +17,13 @@ const AboutMe = () => {
                     alt="profile" />
             </div>
             <div className="about-me-text">
-                <h2 className='highlight'>¡Hola!</h2>
-                <h3>Mi nombre es Monserrat pero puedes decirme Monse.</h3>
-                <p>Soy mexicana y  he sido profesora de español para extranjeros y nativos por más de 6 años. Una de las cosas que más disfruto es conocer estudiantes de diferentes países y ayudarlos en la aventura de aprender un nuevo idioma. </p>
+                <h2 className='highlight'>
+                  <Trans i18nKey={"main.aboutMe.hello"}>
+                    ¡Hola!
+                  </Trans>
+                </h2>
+                <h3>{t("main.aboutMe.myName")}</h3>
+                <p>{t("main.aboutMe.content")}</p>
             </div>
           </div>
 

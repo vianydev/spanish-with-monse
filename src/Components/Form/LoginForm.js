@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import Input from './Input';
 import './Form.css';
 
@@ -18,6 +19,15 @@ const LoginForm = ({ loadUser, setIsLog }) => {
         }));
         validateInput(e);
     }
+    // Translations
+  const { t } = useTranslation();
+  const email = t("form.email")
+  const emailPlaceholder = t("form.emailPlaceholder")
+  const addEmail = t("form.addEmail")
+  const password = t("form.password")
+  const passwordPlaceholder = t("form.passwordPlaceholder")
+  const addPassword = t("form.addPassword")
+  const login = t("buttons.login")
 
     // Set up Error, Input validation
     const [error, setError] = useState({
@@ -33,13 +43,13 @@ const LoginForm = ({ loadUser, setIsLog }) => {
           switch (name) {
             case "email":
               if (!value) {
-                stateObj[name] = "Please enter Email.";
+                stateObj[name] = addEmail;
               } 
               break;
 
             case "password":
               if (!value) {
-                stateObj[name] = "Please enter Password.";
+                stateObj[name] = addPassword;
               } 
               break;
        
@@ -86,10 +96,10 @@ const LoginForm = ({ loadUser, setIsLog }) => {
     return (
         <form className='form' onSubmit={handleLoggin} >
             <Input
-                inputTitle={'Email:'}
+                inputTitle={email}
                 inputType={'email'}
                 inputName={'email'}
-                inputPlaceholder={'Email'}
+                inputPlaceholder={emailPlaceholder}
                 onChangeInput={onInputChange}
                 onBlurHere={validateInput}
                 required 
@@ -97,10 +107,10 @@ const LoginForm = ({ loadUser, setIsLog }) => {
             {error.email && <span className='err'>{error.email}</span>}
 
             <Input
-                inputTitle={'Password:'}
+                inputTitle={password}
                 inputType={'password'}
                 inputName={'password'}
-                inputPlaceholder={'Password'}
+                inputPlaceholder={passwordPlaceholder}
                 onChangeInput={onInputChange}
                 onBlurHere={validateInput}
                 autocomplete={'off'}
@@ -115,7 +125,7 @@ const LoginForm = ({ loadUser, setIsLog }) => {
                     name="submit"
                     value="submit"
                 >
-                    Ingresar</button>
+                    {login}</button>
             </div>    
         </form>
     )

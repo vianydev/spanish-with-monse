@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import Input from './Input';
 import SelectInput from './SelectInput';
 import './Form.css';
+import { useTranslation } from 'react-i18next';
 
 function RegisterForm () {        
     const [input, setInput] = useState({
@@ -16,10 +17,29 @@ function RegisterForm () {
         let { name, value } = e.target;
         setInput(prev => ({
             ...prev,
-            [name]: value
+            [ name ]: value
         }));
         validateInput(e);
     }
+
+    // Translations
+    const { t } = useTranslation();
+    const name = t("form.name")
+    const namePlaceholder = t("form.namePlaceholder")
+    const addName = t("form.errorName.addName")
+    const noNumbers = t("form.errorName.noNumbers")
+    const email = t("form.email")
+    const emailPlaceholder = t("form.emailPlaceholder")
+    const addEmail = t("form.addEmail")
+    const addValidEmail = t("form.addValidEmail")
+    const password = t("form.password")
+    const passwordPlaceholder = t("form.passwordPlaceholder")
+    const addPassword = t("form.addPassword")
+    const useSixCharacters = t("form.useSixCharacters")
+    const oneNumber = t("form.oneNumber")
+    const goal = t("form.goal")
+    const addGoal = t("form.addGoal")
+    const createAccount = t("buttons.createAccount")
 
     // Set up Error and Input validation
     const [error, setError] = useState({
@@ -38,27 +58,27 @@ function RegisterForm () {
             switch (name) {
             case "username":
                 if (!value) {
-                    stateObj[name] = "Please enter Name.";
+                    stateObj[name] = addName;
                 } else if (value.match(numbers)){
-                    stateObj[name] = "Please don't use numbers in your Name.";
+                    stateObj[name] = noNumbers;
                 } 
                 break;
         
             case "email":
                 if (!value) {
-                 stateObj[name] = "Please enter Email.";
+                    stateObj[ name ] = addEmail;
                 } 
                 break;
 
             case "password":
                 if (!value) {
-                    stateObj[name] = "Please enter Password.";
+                    stateObj[name] = addPassword;
                 } 
                 break;
             
             case "goal":
                 if (!value) {
-                    stateObj[name] = "Please add your Goal.";
+                    stateObj[ name ] = addGoal;
                 }
                 break; 
 
@@ -79,19 +99,19 @@ function RegisterForm () {
            
             const validEmail = () => {
                if (!email.includes('@') || !email.includes('.')){
-                    stateObj.email = "Please add a valid Email.";
+                   stateObj.email = addValidEmail;
                 } 
             }
             const validPassword = () => {
                if (password.length < 6){
-                    stateObj.password = "Use at least 6 characters.";
+                   stateObj.password = useSixCharacters;
                 } else if (!password.match(numbers)){
-                    stateObj.password = "Please add at least 1 number.";
+                   stateObj.password = oneNumber;
                 } 
             }
             const validGoal = () => {
                if (!goal){
-                    stateObj.goal = "Please add your Goal.";
+                   stateObj.goal = addGoal;
                 } 
             }
 
@@ -151,10 +171,10 @@ function RegisterForm () {
     return (
         <form className='form' >
             <Input
-                inputTitle={'Name:'}
+                inputTitle={name}
                 inputType={'text'}
                 inputName={'username'}
-                inputPlaceholder={'*Name'}
+                inputPlaceholder={namePlaceholder}
                 onChangeInput={onInputChange}
                 onBlurHere={validateInput}
                 required
@@ -162,20 +182,20 @@ function RegisterForm () {
             {error.username && <span className='err'>{error.username}</span>}
 
             <Input
-                inputTitle={'Email:'}
+                inputTitle={email}
                 inputType={'email'}
                 inputName={'email'}
-                inputPlaceholder={'*Email'}
+                inputPlaceholder={emailPlaceholder}
                 onChangeInput={onInputChange}
                 onBlurHere={validateInput}
                 required
             />
              {error.email && <span className='err'>{error.email}</span>}
             <Input
-                inputTitle={'Password:'}
+                inputTitle={password}
                 inputType={'password'}
                 inputName={'password'}
-                inputPlaceholder={'*Password'}
+                inputPlaceholder={passwordPlaceholder}
                 onChangeInput={onInputChange}
                 onBlurHere={validateInput}
                 autocomplete={'off'}
@@ -183,7 +203,7 @@ function RegisterForm () {
             />
              {error.password && <span className='err'>{error.password}</span>}
             <SelectInput
-                inputTitle={'Select your goal:'}
+                inputTitle={goal}
                 inputType={'select'}
                 inputName={'goal'}
                 onChangeInput={onInputChange}
@@ -201,7 +221,7 @@ function RegisterForm () {
                     value="submit"
                     onClick={handleButton} 
                 >
-                    Crear cuenta</button>
+                    {createAccount}</button>
             </div>
             
         </form>

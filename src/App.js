@@ -11,8 +11,11 @@ import NotFound from './Pages/NotFound/NotFound'
 import NavSignIn from './Components/Nav/NavSignIn';
 import NavSignOut from './Components/Nav/NavSignOut';
 import Nav from './Components/Nav/Nav';
+import { useTranslation } from 'react-i18next'
+
 
 function App() {
+  const { t } = useTranslation();
 
   const [user, setUser] = useState({
     id: '', 
@@ -75,21 +78,22 @@ function App() {
       {
         //Set Nav
         checkLocation === '/login' || checkLocation === '/register' ?
-        <NavSignIn />
+          <NavSignIn t={t} />
         : isLog ?
-        <NavSignOut handleLogOut={handleLogOut} />
-        : <Nav checkLocation={ checkLocation } />
+            <NavSignOut handleLogOut={handleLogOut} t={t} />
+            : <Nav t={t} checkLocation={checkLocation} resetScroll={resetScroll} />
       }
       <Routes>
-        <Route path="/" element={ <Main /> } />
-        <Route path="register" element={<Register />} />
-        <Route path="login" element={<Login loadUser={loadUser} user={user} setIsLog={setIsLog} />} />
-        <Route path="profile" element={<Profile loadUser={loadUser} user={user} />} />
-        <Route path="signout" element={<SignOut  />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="/" element={ <Main t={t} /> } />
+        {/* <Route path="/en" element={ <Main /> } /> */}
+        <Route path="register" element={<Register t={t} />} />
+        <Route path="login" element={<Login t={t} loadUser={loadUser} user={user} setIsLog={setIsLog} />} />
+        <Route path="profile" element={<Profile t={t} loadUser={loadUser} user={user} />} />
+        <Route path="signout" element={<SignOut t={t}  />} />
+        <Route path="*" element={<NotFound t={t} />} />
       </Routes>
       {/* Footer */}
-      <Footer checkLocation={checkLocation} />
+      <Footer checkLocation={checkLocation} t={t} />
       <ScrollButton />
     </div>
   );

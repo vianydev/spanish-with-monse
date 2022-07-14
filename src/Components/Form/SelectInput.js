@@ -20,10 +20,9 @@ const SelectInput = ({
                 onBlur={onBlurHere}
                 required
             > 
-                <option value="">*Select your goal</option>
-                <option value='beginners'>Begginers</option>
-                <option value='conversation'>Conversation</option>
-                <option value='next-level'>Next level</option>
+                <option value='beginners'>Principiante</option>
+                <option value='conversation'>Conversación</option>
+                <option value='next-level'>Siguiente Nivel</option>
             </select>
             <FontAwesomeIcon className='custom-arrow' icon={faChevronDown} />
         </div>

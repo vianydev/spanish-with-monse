@@ -158,6 +158,21 @@ button,
   font-weight: 700;
   text-transform: uppercase;
 }
+.link-dark {
+  text-align: center;
+  background: none;
+  border: none;
+  box-shadow: none;
+  border: none;
+  border-radius: 10px;
+  color: var(--gray);
+  
+  /* padding: 0px; */
+  margin: 0;
+  padding: 10px 10px;
+  font-size: 14px;
+  text-transform: none;
+}
 /* Button Hover */
 .purple-btn:hover {
   border: 2px solid var(--purple);
@@ -178,6 +193,10 @@ button,
   color: var(--dark-purple);
   border-bottom: 2px solid var(--dark-purple);
   border-radius: 0px;
+}
+.link-dark:hover {
+  color: var(--dark-gray);
+  background-color: var(--bg-light-green);
 }
 /* Button Active */
 .purple-btn:active {
@@ -200,6 +219,10 @@ button,
 }
 .link-purple:active {
   transform: scale(0.9);
+}
+.link-dark:active {
+  color: var(--purple);
+  background-color: var(--bg-light-purple);
 }
 /* Highlight text with gradient */
 .highlight {

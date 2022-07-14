@@ -2,7 +2,7 @@ import { Link, useLocation } from 'react-router-dom';
 import logo from '../../Assets/images/logo.png';
 import './Navbar.css';
 
-const NavSignIn = () => {
+const NavSignIn = ({ t }) => {
     let location = useLocation();
 
     return (
@@ -13,8 +13,8 @@ const NavSignIn = () => {
             </Link>
             {
                 location.pathname === '/login' ?
-                <Link to='/register' className='link-purple nav-right'>Sign up</Link>
-                :  <Link to='/login' className='link-purple nav-right'>Log in</Link>
+                <Link to='/register' className='link-purple nav-right'>{ t("buttons.createAccount") }</Link>
+                    : <Link to='/login' className='link-purple nav-right'>{t("buttons.login")}</Link>
             }
            
 
