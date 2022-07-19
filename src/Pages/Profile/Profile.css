@@ -1,41 +1,114 @@
 #dashboard {
-    margin-top: 100px;
-    text-align: center;
-  }
-  #dashboard h1 {
-    margin-bottom: 0;
-  }
+  margin-top: 100px;
+  text-align: center;
+}
+#dashboard h1 {
+  margin-bottom: 0;
+}
 .user-options-board {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.user-options-container {
-    padding: 50px 0;
+  margin: 20px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.user-options-container p {
-    margin: 0;
+.user-options {
+  display: inline-flex;
+  margin: 20px;
 }
 .icon-user-options-box {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 10px;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
 
-    background: var(--gradient-vertical);
-    border-radius: 50%;
+  background: var(--gradient-vertical);
+  border-radius: 50%;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .icon-user-options {
-    height: 25px;
-    color: white;
-    pointer-events: none;
+  height: 25px;
+  color: white;
+  pointer-events: none;
+}
+
+/* Info */
+#info {
+  margin: 120px 10px 50px 0px;
+  /* height: 700px; */
+  text-align: left;
+}
+.info-container {
+  margin: 0 10px;
+  max-width: 500px;
+}
+#info h3 {
+  margin: 50px 0 0 0;
+}
+#info h4,
+#info h5 {
+  margin: 0;
+}
+.divisor {
+  border-top: 1px solid var(--light-gray);
+  margin: 80px 0;
+}
+.divisor-content-table {
+  margin: 10px;
+  border-top: 1px solid white;
+}
+.content-table ul {
+  margin: 10px 0;
+}
+.content-table li { 
+  margin: 20px 0;
+}
+.choose-your-goal ul {
+  padding-left: 20px;
+}
+.goals-list {
+  margin: 40px 0 0 40px;
+}
+strong {
+  padding: 0;
+}
+.price-table {
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.price-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+
+  margin: 2px 60px 2px 10px;
+  padding: 10px;
+  border: 1px solid var(--light-gray);
+  border-radius: 10px;
+}
+
+.price-box ul {
+  padding-left: 20px;
+}
+@media only screen and (min-width: 800px) {
+  .info-container {
+    margin: 0 auto;
+    max-width: 700px;
+  }
+
+  .info-container p,
+  .info-container ul {
+    max-width: 500px;
+  }
+  .price-table {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .price-box {
+    margin: 5px;
+  }
 }

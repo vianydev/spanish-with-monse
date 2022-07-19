@@ -28,7 +28,7 @@ export const esp = {
   },
   login: {
     title: "Ingresa a tu cuenta",
-    haveAcount: "¿Aún no tienes una cuenta?",
+    haveAccount: "¿Aún no tienes una cuenta?",
     forgotPassword: "¿Has olvidado tu contraseña?",
     resetPassword: "Actualizar contraseña",
   },
@@ -50,6 +50,8 @@ export const esp = {
     oneNumber: "Usa al menos un número",
     goal: "Selecciona tu objetivo:",
     addGoal: "Por favor selecciona tu objetivo",
+    errorRegister: "Algo salió mal. Tu email puede que ya esté registrado.",
+    errorLogin: "La dirección de email o la contraseña que has introducido no es correcta."
   },
   main: {
     hero: {

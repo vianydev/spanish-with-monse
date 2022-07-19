@@ -8,7 +8,6 @@ This is a projects for a spanish teacher to handle her student's scheduled.
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -24,20 +23,9 @@ Users should be able to:
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 
-### Screenshot
-
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-
 ### Links
 
-- Solution URL: [Solution URL](https://your-solution-url.com)
+- Solution URL: [Solution URL](https://github.com/vianydev/spanish-with-monse)
 - Live Site URL: [Live site URL](https://your-live-site-url.com)
 
 ## My process
@@ -50,13 +38,16 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- [i18next](https://react.i18next.com/) - internationalization framework for React
+- [React Router](https://reactrouter.com/) - To handle routes
+- [Font Awesome](https://fontawesome.com/) - Icons Library
+- [Font Source](https://fontsource.org/) - Fonts Library
+- [React Calendly](https://github.com/tcampb/react-calendly) -Calendly integration for React apps
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [React Router Configuration](https://www.copycat.dev/blog/reactjs-navigation/#:~:text=React%20Router%20is%20a%20library,back%20button%20and%20page%20refresh.) - Great article to config your React Router
+- [Local Storage](https://blog.logrocket.com/using-localstorage-react-hooks/) - Great article which helped meto handle with local storage for my users login.
 
 
 

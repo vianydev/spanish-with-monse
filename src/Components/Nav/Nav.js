@@ -1,48 +1,21 @@
 import { Link } from "react-router-dom";
 import logo from "../../Assets/images/logo.png";
-import down from "../../Assets/icons/down.png";
 import iconHamburger from "../../Assets/icons/hamburger.png";
 import iconX from "../../Assets/icons/x.png";
 import "./Navbar.css";
-import i18n from "../../i18n";
+// import i18n from "../../i18n";
+import TranslateButton from "../TranslateButton";
 
 const Nav = ({ checkLocation, t, resetScroll }) => {
+  // i18next variables
   const registerButton = t("buttons.register");
   const loginButton = t("buttons.login");
   const howToStart = t("nav.howToStart");
   const aboutMe = t("nav.aboutMe");
 
-  const hoverDropdown = (actived) => {
-    const dropdown = document.getElementById("toggle-dropdown");
-    actived === "active"
-      ? dropdown.classList.add("on")
-      : dropdown.classList.remove("on");
-  };
-
-  const clickDropdown = () => {
-    const dropdown = document.getElementById("toggle-dropdown-mobile");
-    dropdown.classList.toggle("on");
-  };
-
-  const handleLanguage = (lang) => {
-    const dropdown = document.getElementById("toggle-dropdown-mobile");
-
-    if (lang === "es") {
-      i18n.changeLanguage("es", (err, t) => {
-        if (err) return console.log("something went wrong loading", err);
-        dropdown.classList.remove("on");
-      });
-    } else {
-      i18n.changeLanguage("en", (err, t) => {
-        if (err) return console.log("something went wrong loading", err);
-        dropdown.classList.remove("on");
-      });
-    }
-  };
-
   const showNavMobile = () => {
     const showContent = document.getElementById("toggle-nav");
-    showContent.classList.toggle("on");
+    showContent.classList.toggle("on-nav");
     // Handle Nav mobile icon
     const icon = document.getElementsByClassName("nav-mobile-btn");
     icon[0].src === iconHamburger
@@ -53,7 +26,7 @@ const Nav = ({ checkLocation, t, resetScroll }) => {
   return (
     <nav id="nav">
       {/* Desktop Nav */}
-      <Link className="nav-logo" to="/" onClick={resetScroll()}>
+      <Link className="nav-logo" to="/" onClick={() => resetScroll()}>
         <img src={logo} alt="logo" />
       </Link>
 
@@ -72,25 +45,7 @@ const Nav = ({ checkLocation, t, resetScroll }) => {
 
       <div className="nav-buttons">
         {checkLocation === "/" ? (
-          <div
-            className="dropdown"
-            onMouseEnter={() => hoverDropdown("active")}
-            onMouseLeave={() => hoverDropdown("desactive")}
-          >
-            <button className="dropbtn">
-              {i18n.language === "es" ? "Español" : "English"}
-              <img className="icon-down" src={down} alt="down" />
-            </button>
-
-            <div id="toggle-dropdown" className="dropdown-content">
-              <p className="link-dark" onClick={() => handleLanguage("es")}>
-                Español
-              </p>
-              <p className="link-dark" onClick={() => handleLanguage("en")}>
-                English
-              </p>
-            </div>
-          </div>
+          <TranslateButton id={"toggle-translate"} />
         ) : (
           <div></div>
         )}
@@ -115,36 +70,28 @@ const Nav = ({ checkLocation, t, resetScroll }) => {
         <div id="toggle-nav" className="nav-mobile-menu">
           <div className="nav-mobile-menu-content">
             <Link to="/login" className="link-purple nav-right">
-              {" "}
+              {/* {" "} */}
               {loginButton}
             </Link>
 
-            <div className="dropdown">
-              <button className="dropbtn" onClick={clickDropdown}>
-                {i18n.language === "es" ? "Español" : "English"}
-                <img className="icon-down" src={down} alt="down" />
-              </button>
-              <div
-                id="toggle-dropdown-mobile"
-                className="dropdown-content-mobile"
-              >
-                <p className="link-dark" onClick={() => handleLanguage("es")}>
-                  Español
-                </p>
-                <p className="link-dark" onClick={() => handleLanguage("en")}>
-                  English
-                </p>
-              </div>
-            </div>
+            <TranslateButton id={"toggle-translate-mobile"} />
 
-            <div className="nav-links-mobile">
-              <a className="nav-link" href="#process" onClick={showNavMobile}>
-                {howToStart}
-              </a>
-              <a className="nav-link" href="#about-me" onClick={showNavMobile}>
-                {aboutMe}
-              </a>
-            </div>
+            {checkLocation === "/" ? (
+              <div className="nav-links-mobile">
+                <a className="nav-link" href="#process" onClick={showNavMobile}>
+                  {howToStart}
+                </a>
+                <a
+                  className="nav-link"
+                  href="#about-me"
+                  onClick={showNavMobile}
+                >
+                  {aboutMe}
+                </a>
+              </div>
+            ) : (
+              <div className="nav-links-mobile"></div>
+            )}
 
             <Link to="/register" className="btn-shape purple-btn">
               {registerButton}

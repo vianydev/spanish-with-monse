@@ -14,18 +14,15 @@ const Process = ({ t }) => {
             </h2>
           {/* </div> */}
           <div className="process-box-container">
-            <div className="process-box"
-               onClick={() => console.log("click 1")}>
+            <div className="process-box">
               <p className="process-number highlight">1</p>
               <p className='process-text'>{t("main.howToStart.1")}</p>
             </div>
-            <div className="process-box"
-                onClick={() => console.log("click 2")}>
+            <div className="process-box">
               <p className="process-number highlight">2</p>
               <p className='process-text'>{t("main.howToStart.2")}</p>
             </div>
-            <div className="process-box"
-                onClick={() => console.log("click 3")}>
+            <div className="process-box">
               <p className="process-number highlight">3</p>
             <p className='process-text'>{t("main.howToStart.3")}</p>
             </div>

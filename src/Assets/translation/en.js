@@ -18,7 +18,7 @@ export const eng = {
   },
   error: "Ops, page not found",
   profile: {
-    help: "Do you need help?",
+    help: "Do you need help?"
   },
   register: {
     title: "Sign up to start learning Spanish with Monse",
@@ -50,6 +50,8 @@ export const eng = {
     oneNumber: "Please add at least 1 number",
     goal: "Select your goal",
     addGoal: "Please add your goal",
+    errorRegister: "There was a problem. Your email may be registered.",
+    errorLogin: "The email address or password you entered is incorrect."
   },
   main: {
     hero: {
@@ -114,4 +116,5 @@ export const eng = {
         "I am Mexican and have been teaching Spanish to both foreigners and natives for over 6 years. Meeting students from other countries and helping them in the adventure of learning a new language is one of my favorite things.",
     },
   },
+
 };

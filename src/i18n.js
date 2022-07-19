@@ -25,7 +25,7 @@ i18n
     // lng: "es",
     fallbackLng,
     resources,
-    debug: true,
+    debug: false,
     interpolation: {
       escapeValue: false, // react already safes from xss
     },

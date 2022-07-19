@@ -342,6 +342,7 @@ button,
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  align-items: center;
 }
 .nav-footer {
   display: flex;
@@ -454,15 +455,19 @@ button,
   grid-template-columns: 1fr;
   gap: 20px;
 }
-.login-link a {
-  margin: 0 0 0 5px;
+.terms-conditions {
+  font-size: 10px;
+  max-width: 500px;
+  text-align: center;
 }
 @media only screen and (min-width: 650px) {
   .login-link {
     margin: 70px auto;
     max-width: 600px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
 }
 
@@ -490,4 +495,15 @@ button,
   height: 500px;
   background: url(./Assets/images/404.png) no-repeat center;
   background-size: contain;
+}
+
+/* Errors pop up */
+#error-popup {
+  display: none;
+  margin: 0 auto;
+  max-width: 500px;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--error);
 }
