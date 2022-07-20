@@ -100,8 +100,8 @@ function App() {
           path="profile/:id"
           element={<Profile t={t} loadUser={loadUser} user={user} />}
         />
-        <Route path="profile/info" element={<Info t={t} />} />
-        <Route path="signout" element={<SignOut t={t} />} />
+        <Route path="/profile/info" element={<Info t={t} />} />
+        <Route path="/signout" element={<SignOut t={t} />} />
         <Route path="*" element={<NotFound t={t} />} />
       </Routes>
       {/* Footer */}
