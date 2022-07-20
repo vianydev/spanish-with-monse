@@ -96,8 +96,13 @@ function RegisterForm() {
 
     setError((prev) => {
       const stateObj = { ...prev };
-      const { email, password, goal } = input;
+      const { username, email, password, goal } = input;
 
+      const validName = () => {
+        if (!username) {
+          stateObj.username = addName;
+        }
+      };
       const validEmail = () => {
         if (!email.includes("@") || !email.includes(".")) {
           stateObj.email = addValidEmail;
@@ -115,7 +120,7 @@ function RegisterForm() {
           stateObj.goal = addGoal;
         }
       };
-
+      validName();
       validEmail();
       validPassword();
       validGoal();
@@ -152,7 +157,7 @@ function RegisterForm() {
     } else if (error.goal || !goal) {
       return;
     } else {
-      fetch("http://localhost:3000/register", {
+      fetch("https://swmonse.herokuapp.com/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -167,7 +172,7 @@ function RegisterForm() {
           if (user.id) {
             navigate("/login");
           } else {
-            console.log(user);
+            // console.log(user);
             handleRegisterError();
           }
         });

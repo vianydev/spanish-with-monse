@@ -20,6 +20,7 @@ const SelectInput = ({
                 onBlur={onBlurHere}
                 required
             > 
+                <option value=''></option>
                 <option value='beginners'>Principiante</option>
                 <option value='conversation'>Conversación</option>
                 <option value='next-level'>Siguiente Nivel</option>

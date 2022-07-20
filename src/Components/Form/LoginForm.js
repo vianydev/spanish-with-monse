@@ -72,7 +72,7 @@ const LoginForm = ({ loadUser, setIsLog }) => {
     e.preventDefault();
     const { email, password } = input;
     
-    fetch('http://localhost:3000/login', {
+    fetch('https://swmonse.herokuapp.com/login', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({
@@ -88,20 +88,18 @@ const LoginForm = ({ loadUser, setIsLog }) => {
             localStorage.setItem(
                 "loggedUser", JSON.stringify(user)
             );
-          fetch(`http://localhost:3000/profile/${user.id}`, {
+          fetch(`https://swmonse.herokuapp.com/profile/${user.id}`, {
             method: "GET",
             headers: { "Content-Type": "application/json" }
           })
             .then((response) => response.json())
             .then((user) => {
               if (user.id) {
-                console.log(user)
                 navigate('/profile/'+user.id);
               } else {
                 console.log('error');
               }
             });
-            // navigate('/profile/id');
         } else {
             handleLoginError();
         }
