@@ -8,6 +8,7 @@ import "@fontsource/open-sans";
 import "@fontsource/open-sans/700.css"
 import App from './App';
 import './i18n';
+import * as serviceWorker from './serviceWorker';
 
 
 
@@ -18,5 +19,6 @@ root.render(
       <App />
     </React.StrictMode>
   </Router>
-  
 );
+
+serviceWorker.register();
