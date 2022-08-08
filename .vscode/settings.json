@@ -1,0 +1,9 @@
+{
+  "emmet.syntaxProfiles": {
+  
+  },
+  "material-icon-theme.activeIconPack": "react",
+  "emmet.includeLanguages": {
+    "\"javascript\"": "\"javascriptreact\""
+  }
+}
