@@ -59,12 +59,12 @@ export const esp = {
     },
     benefits: {
       title:
-        "Disfruta de los <1>beneficios</1> de aprender Español con clases privadas en línea.",
+        "Disfruta de los <1>beneficios</1> de aprender español con clases privadas en línea.",
       Rhythm: "Avanza a tu ritmo",
       RhythmText: "Cada clase es adaptada a la velocidad que tu prefieras.",
       Conversations: "Conversaciones reales",
       ConversationsText:
-        "Práctica con conversaciones reales sobre temas que te interesen y amplía tu vocabulario.",
+        "Practica con conversaciones reales sobre temas que te interesen y amplía tu vocabulario.",
       Place: "Desde cualquier lugar",
       PlaceText:
         "Mejora tu fluidez en el idioma desde cualquier parte del mundo.",
@@ -73,7 +73,7 @@ export const esp = {
       Topics: "Temas de tu interés",
       TopicsText: "Mejora tu experiencia aprendiendo con temas que te gustan.",
       Questions: "Resuelve tus dudas",
-      QuestionsText: "Si algo no quedó claro, puedes preguntar.",
+      QuestionsText: "Si algo no queda claro, puedes preguntar.",
     },
     goals: {
       title: "Clases totalmente enfocadas en alcanzar tus <1>objetivos</1>.",
@@ -83,7 +83,7 @@ export const esp = {
         "Comienza con las bases para comunicarte en español lo más pronto posible, de manera sencilla y práctica.",
       perfectForYou: "Ideal para ti",
       beginnerList:
-        "<1>Es tu primera vez intentando aprender Español.</1><1>Entiendes un poco, pero no conoces la gramática.<1/>",
+        "<1>Es tu primera vez intentando aprender español.</1><1>Entiendes un poco, pero no conoces la gramática.<1/>",
       conversation:
         "Mejora tu habilidad para expresarte, expande tu vocabulario, mejora tu pronunciación y diviértete en el trayecto.",
       conversationList:
@@ -91,7 +91,7 @@ export const esp = {
       nextLevel:
         "Trabajaremos juntos para alcanzar el siguiente nivel en tu español, ya sea pronunciar mejor, leer o escribir textos complejos, ampliar tu vocabulario, etc.",
       nextLevelList:
-        "<1>Anteriormente has tomado clases y quieres continuar.</1><1>Buscas un nivel específico(A1, A2, B1, B2).</1><1>Quieres mejorar tu español.</1>",
+        "<1>Anteriormente has tomado clases y quieres continuar.</1><1>Buscas un nivel específico (A1, A2, B1, B2).</1><1>Quieres mejorar tu español.</1>",
     },
     banner1: {
       title: "Da el primer paso, reserva una clase muestra",
