@@ -157,7 +157,7 @@ function RegisterForm() {
     } else if (error.goal || !goal) {
       return;
     } else {
-      fetch("https://swmonse.herokuapp.com/register", {
+      fetch("https://swmonse-server.onrender.com/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
