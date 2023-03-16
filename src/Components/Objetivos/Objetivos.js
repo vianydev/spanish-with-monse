@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import "./Objetivos.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRocket } from '@fortawesome/free-solid-svg-icons';
@@ -7,8 +6,7 @@ import { faArrowUpRightDots } from '@fortawesome/free-solid-svg-icons';
 import { Trans } from 'react-i18next';
 
 const Objetivos = ({ t }) => {
-
-  return (
+return (
     <section id="objetivos"  data-scroll>
         <div className="objetivos-container">
             <div className="objetivos-title">
@@ -29,7 +27,7 @@ const Objetivos = ({ t }) => {
                             />
                         </div>
                         <div className="objetivos-text">
-                            <h4>Principiante</h4>
+                            <h4>{t("form.beginner")}</h4>
                             <h6>{t("main.goals.beginner")}</h6>
                         </div>
                         <div className="objetivos-list">
@@ -49,7 +47,7 @@ const Objetivos = ({ t }) => {
                             <FontAwesomeIcon className="icon-objetivos" icon={faMessage} />
                         </div>
                         <div className="objetivos-text">
-                            <h4>Conversación</h4>
+                            <h4>{t("form.conversation")}</h4>
                             <h6>{t("main.goals.conversation")}</h6>
                         </div>
                         <div className="objetivos-list">
@@ -70,7 +68,7 @@ const Objetivos = ({ t }) => {
                             <FontAwesomeIcon className="icon-objetivos" icon={faArrowUpRightDots} />
                         </div>
                         <div className="objetivos-text">
-                            <h4>Siguiente nivel</h4>
+                            <h4>{t("form.nextLevel")}</h4>
                             <h6>{t("main.goals.nextLevel")}</h6>
                         </div>
                         <div className="objetivos-list">
@@ -86,11 +84,6 @@ const Objetivos = ({ t }) => {
                     </div>
                 </div>
             </div>
-            <Link 
-                className="link-purple" 
-                to='./register'
-                style={{padding: '20px 0 0 0'}}
-            >{t("buttons.registerFor")}</Link>
         </div>
     </section>
   )

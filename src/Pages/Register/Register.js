@@ -1,5 +1,4 @@
-import { Link } from "react-router-dom";
-import RegisterForm from "../../Components/Form/RegisterForm";
+import ContactForm from "../../Components/Form/ContactForm";
 
 const Register = ({ t }) => {
   return (
@@ -7,15 +6,11 @@ const Register = ({ t }) => {
       <div id="form" className="register">
         <h3>{t("register.title")}</h3>
 
-        <RegisterForm />
+        {/* <RegisterForm /> */}
+
+        <ContactForm />
 
         <div className="login-link">
-          <div>
-            {t("register.haveAccount")}
-            <Link className="link-purple" to="/login">
-              {t("buttons.login")}
-            </Link>
-          </div>
           <p className="terms-conditions">
             Al crear una cuenta, aceptas nuestros Términos y condiciones.
             Recibirás correos electrónicos y notificaciones de 'Spanish with

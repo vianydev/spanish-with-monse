@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import logo from '../../Assets/images/logo.png';
 import './Navbar.css';
 
-const NavSignOut = ({ handleLogOut, t, user }) => {
+const NavBackHome = ({ t }) => {
 
     return (
         <nav id='nav'>
@@ -14,16 +14,13 @@ const NavSignOut = ({ handleLogOut, t, user }) => {
             <div className='sign-right'>
                 <Link 
                     className='link-purple signout-link' 
-                    to={`/profile/${user.id}`} >
-                    {t("signoutNav.myProfile")}
+                    to={`/`} >
+                    {t("buttons.backHome")}
                 </Link>
-                <a 
-                    className='link-purple signout-link' 
-                    href='/signout' 
-                    onClick={() => handleLogOut()}>{t("signoutNav.signout")}</a>
+
             </div>       
         </nav>
     )
 }
 
-export default NavSignOut;
+export default NavBackHome;

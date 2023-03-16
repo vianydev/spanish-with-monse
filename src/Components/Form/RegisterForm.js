@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { useForm, ValidationError } from '@formspree/react';
+// import ContactForm from "./contactForm";
 import Input from "./Input";
 import SelectInput from "./SelectInput";
 import "./Form.css";

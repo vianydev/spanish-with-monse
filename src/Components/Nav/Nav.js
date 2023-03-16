@@ -8,8 +8,7 @@ import TranslateButton from "../TranslateButton";
 
 const Nav = ({ checkLocation, t, resetScroll }) => {
   // i18next variables
-  const registerButton = t("buttons.register");
-  const loginButton = t("buttons.login");
+  const bookTrialClassButton = t("buttons.bookTrialClass");
   const howToStart = t("nav.howToStart");
   const aboutMe = t("nav.aboutMe");
 
@@ -50,11 +49,8 @@ const Nav = ({ checkLocation, t, resetScroll }) => {
           <div></div>
         )}
 
-        <Link to="/login" className="link-purple nav-right">
-          {loginButton}
-        </Link>
         <Link to="/register" className="btn-shape purple-btn">
-          {registerButton}
+          {bookTrialClassButton}
         </Link>
       </div>
 
@@ -69,11 +65,6 @@ const Nav = ({ checkLocation, t, resetScroll }) => {
 
         <div id="toggle-nav" className="nav-mobile-menu">
           <div className="nav-mobile-menu-content">
-            <Link to="/login" className="link-purple nav-right">
-              {/* {" "} */}
-              {loginButton}
-            </Link>
-
             <TranslateButton id={"toggle-translate-mobile"} />
 
             {checkLocation === "/" ? (
@@ -94,7 +85,7 @@ const Nav = ({ checkLocation, t, resetScroll }) => {
             )}
 
             <Link to="/register" className="btn-shape purple-btn">
-              {registerButton}
+              {bookTrialClassButton}
             </Link>
           </div>
         </div>

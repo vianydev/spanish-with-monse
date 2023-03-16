@@ -1,10 +1,10 @@
 export const eng = {
   buttons: {
-    register: "register",
-    login: "Log in",
+    bookTrialClass: "Book a trial class",
+    backHome: "Home",
     loginAccount: "Log in your account",
-    bookClass: "Book free class",
-    book: "Book class",
+    bookClass: "Book a free trial class",
+    bookYourClass: "Book your class",
     registerFor: "Register for a free class",
     createAccount: "Create account"
   },
@@ -12,25 +12,16 @@ export const eng = {
     howToStart: "How to start?",
     aboutMe: "About me",
   },
-  signoutNav: {
-    signout: "Sign out",
-    myProfile: "My profile",
-  },
   error: "Ops, page not found",
-  profile: {
-    help: "Do you need help?"
-  },
   register: {
     title: "Sign up to start learning Spanish with Monse",
     haveAccount: "Already have an account?",
     terms:
       "By creating an account, you agree to our Terms and Conditions . You will receive emails and notifications from Spanish with Monse about your learning progress and our services, which you can unsubscribe at any time free of charge. We will process your personal data in accordance with our Privacy policy.",
   },
-  login: {
-    title: "Log into your account",
-    haveAccount: "Don’t have an account yet?",
-    forgotPassword: "Forgot your password?",
-    resetPassword: "Reset password"
+  thanks: {
+    title: "Thanks for register",
+    info: "I'll send you more information to scheduled your trial class"
   },
   form: {
     name: "Name:",
@@ -50,7 +41,10 @@ export const eng = {
     oneNumber: "Please add at least 1 number",
     goal: "Select your goal",
     addGoal: "Please add your goal",
-    errorRegister: "There was a problem. Your email may be registered.",
+    beginner: "Beginner",
+    conversation: "Conversation",
+    nextLevel: "Next Level",
+    errorRegister: "There was a problem, plase, check your information.",
     errorLogin: "The email address or password you entered is incorrect."
   },
   main: {

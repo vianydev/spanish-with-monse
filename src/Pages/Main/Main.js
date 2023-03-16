@@ -17,7 +17,7 @@ const Main = ({ t }) => {
         description={t("main.banner1.content")}
         bgColor="var(--gradient)"
         btnColor="btn-shape pink-btn"
-        btnDescription={t("buttons.book")}
+        btnDescription={t("buttons.bookYourClass")}
       />
       <Process t={t} />
       <AboutMe t={t} />
@@ -26,7 +26,7 @@ const Main = ({ t }) => {
         description={t("main.banner2.content")} 
         bgColor="var(--dark-gray)"
         btnColor="btn-shape pink-btn"
-        btnDescription={t("buttons.book")}
+        btnDescription={t("buttons.bookClass")}
       />
     </section>
   )

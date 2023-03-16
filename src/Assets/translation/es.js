@@ -1,36 +1,27 @@
 export const esp = {
   buttons: {
-    register: "Crear cuenta",
-    login: "Ingresar",
+    bookTrialClass: "Reservar una clase",
+    backHome: "Inicio",
     loginAccount: "Ingresar a tu cuenta",
-    bookClass: "Reservar clase gratis",
-    book: "Reservar clase",
-    registerFor: "Registrarse para clase gratis",
+    bookClass: "Reserva una clase gratis",
+    bookYourClass: "Reserva tu clase",
+    registerFor: "Registrate para una clase gratis",
     createAccount: "Crear cuenta",
   },
   nav: {
     howToStart: "¿Cómo comenzar?",
     aboutMe: "Acerca de mí",
   },
-  signoutNav: {
-    signout: "Salir",
-    myProfile: "Mi perfil",
-  },
   error: "Ups, algo salió mal",
-  profile: {
-    help: "¿Necesitas ayuda?",
-  },
   register: {
     title: "Regístrate y aprende español con Monse",
     haveAcount: "¿Ya tienes una cuenta?",
     terms:
       "Al crear una cuenta, aceptas nuestros Términos y condiciones . Recibirás correos electrónicos y notificaciones de Spanish with Monse  sobre el progreso de tu aprendizaje y sobre nuestros servicios. Puedes darte de baja en cualquier momento de forma gratuita. Procesaremos tus datos personales de acuerdo con nuestra Política de privacidad.",
   },
-  login: {
-    title: "Ingresa a tu cuenta",
-    haveAccount: "¿Aún no tienes una cuenta?",
-    forgotPassword: "¿Has olvidado tu contraseña?",
-    resetPassword: "Actualizar contraseña",
+  thanks: {
+    title: "Gracias por registrarte",
+    info: " en breves me pondré en contacto contigo para agendar tu clase muestra."
   },
   form: {
     name: "Nombre:",
@@ -50,7 +41,10 @@ export const esp = {
     oneNumber: "Usa al menos un número",
     goal: "Selecciona tu objetivo:",
     addGoal: "Por favor selecciona tu objetivo",
-    errorRegister: "Algo salió mal. Tu email puede que ya esté registrado.",
+    beginner: "Principiante",
+    conversation: "Conversación",
+    nextLevel: "Siguiente Nivel",
+    errorRegister: "Algo salió mal. Por favor, revisa tu información.",
     errorLogin: "La dirección de email o la contraseña que has introducido no es correcta."
   },
   main: {

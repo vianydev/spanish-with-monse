@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { useTranslation } from "react-i18next";
 
 const SelectInput = ({  
     inputTitle,
@@ -8,6 +9,11 @@ const SelectInput = ({
     onChangeInput,
     onBlurHere
 }) => {        
+    // Translations
+    const { t } = useTranslation();
+    const beginner = t("form.beginner");
+    const conversation = t("form.conversation");
+    const nextLevel = t("form.nextLevel");
 
     return (
         <div id='select' className='form-box'>
@@ -20,10 +26,10 @@ const SelectInput = ({
                 onBlur={onBlurHere}
                 required
             > 
-                <option value=''></option>
-                <option value='beginners'>Principiante</option>
-                <option value='conversation'>Conversación</option>
-                <option value='next-level'>Siguiente Nivel</option>
+                <option value='select'></option>
+                <option value='beginners'>{beginner}</option>
+                <option value='conversation'>{conversation}</option>
+                <option value='next-level'>{nextLevel}</option>
             </select>
             <FontAwesomeIcon className='custom-arrow' icon={faChevronDown} />
         </div>

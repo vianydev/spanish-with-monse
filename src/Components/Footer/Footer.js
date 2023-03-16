@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
 import TranslateButton from "../TranslateButton";
 
 const Footer = ({ t }) => {
@@ -11,17 +10,8 @@ const Footer = ({ t }) => {
     <section id="footer">
       <div className="footer-box">
         <a className="logo-footer" href="/">
-          <img src={logoFooter} alt="Spanish with Monse Logo" />
+          <img src={logoFooter} alt="Spanish with Monse Logo" width="150px" />
         </a>
-
-        <div className="nav-footer">
-          <Link className="nav-link" to={"/register"}>
-            {t("buttons.book")}
-          </Link>
-          <Link className="nav-link" to={"/login"}>
-            {t("buttons.loginAccount")}
-          </Link>
-        </div>
 
         <div className="social-icons-footer">
           <a className="social-link" href="mailto:smonse.rr@gmail.com">
@@ -33,8 +23,7 @@ const Footer = ({ t }) => {
             </div>
           </a>
 
-          <a
-            className="social-link"
+          <a className="social-link"
             href="https://api.whatsapp.com/send?phone=529211446166"
           >
             <div className="social-icon">
