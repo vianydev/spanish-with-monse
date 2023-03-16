@@ -12,7 +12,6 @@ function ContactForm() {
     email: "",
     selectGoal: "",
   });
-  console.log("🚀 ~ file: contactForm.js:18 ~ ContactForm ~ input:", input)
 
   const onInputChange = (e) => {
     let { name, value } = e.target;
@@ -131,7 +130,6 @@ function ContactForm() {
           handleServerResponse(false, 'error', form);
         });
     } else if (username.includes("") || email.includes("") || selectGoal.includes("") || selectGoal.includes("select")) {
-      console.log('tenemos uin input vacio')
       handleRegisterError();
     }
   };

@@ -104,7 +104,7 @@ export const eng = {
       3: "Select your preferred lesson plan.",
     },
     aboutMe: {
-      hello: "Hello!",
+      hello: "¡Hola!",
       myName: "Monserrat is my name, but you can call me Monse.",
       content:
         "I am Mexican and have been teaching Spanish to both foreigners and natives for over 6 years. Meeting students from other countries and helping them in the adventure of learning a new language is one of my favorite things.",

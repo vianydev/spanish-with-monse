@@ -14,11 +14,11 @@ const Beneficios = ({ t }) => {
     <section id="beneficios">
       <div className="line-top"></div>
       <div className="beneficios-container">
-        <h2>
+        <h3>
           <Trans i18nKey='main.benefits.title'>
             Disfruta de los <span className="highlight">beneficios</span> de aprender Español con clases privadas en línea.
           </Trans>
-        </h2>
+        </h3>
         
 
         <div className="beneficios-box-container">

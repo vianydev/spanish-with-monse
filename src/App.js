@@ -8,7 +8,7 @@ import ScrollButton from "./Components/ScrollButton";
 import Thanks from "./Pages/Thanks/Thanks";
 import NotFound from "./Pages/NotFound/NotFound";
 import NavBookClass from "./Components/Nav/NavBookClass";
-import NavBackHome from "./Components/Nav/NavBackHome";
+// import NavBackHome from "./Components/Nav/NavBackHome";
 import Nav from "./Components/Nav/Nav";
 
 function App() {
@@ -36,8 +36,6 @@ function App() {
         //Set Nav
         checkLocation === "/register" ? (
           <NavBookClass t={t} />
-        ) : checkLocation === "/thanks" ? (
-          <NavBackHome t={t} />
         ) : (
           <Nav t={t} checkLocation={checkLocation} resetScroll={resetScroll} />
         )

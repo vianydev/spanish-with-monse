@@ -384,7 +384,6 @@ button,
   margin: 10px;
 }
 .svg-inline--fa {
-  height: 20px;
   padding: 0 10px;
 }
 .footer-link {
@@ -428,7 +427,6 @@ button,
 }
 .fa-scroll-top {
   height: 40px;
-  
 }
 .svg-inline--fa {
   cursor: pointer;
