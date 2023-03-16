@@ -31,7 +31,7 @@ function ContactForm() {
   const email = t("form.email");
   const emailPlaceholder = t("form.emailPlaceholder");
   const addEmail = t("form.addEmail");
-  const addValidEmail = t("form.addValidEmail");
+  // const addValidEmail = t("form.addValidEmail");
   const goal = t("form.goal");
   const addGoal = t("form.addGoal");
   const bookYourClass = t("buttons.bookYourClass");
