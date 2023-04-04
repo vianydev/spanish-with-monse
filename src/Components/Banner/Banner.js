@@ -17,7 +17,7 @@ const Banner = ({
             <p>{description}</p>
             <Link 
               className={btnColor} 
-              to='./register'
+              to='./trialClass'
               style={{margin: '30px 10px 10px 10px'}}
             >{btnDescription}</Link>
         </div>

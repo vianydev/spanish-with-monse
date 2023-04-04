@@ -1,6 +1,6 @@
 import ContactForm from "../../Components/Form/ContactForm";
 
-const Register = ({ t }) => {
+const TrialClassForm = ({ t }) => {
   return (
     <section id="trialClassForm">
       <div id="form" className="register">
@@ -25,4 +25,4 @@ const Register = ({ t }) => {
   );
 };
 
-export default Register;
+export default TrialClassForm;

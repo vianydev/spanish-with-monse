@@ -2,7 +2,7 @@ import { React, useEffect, useState } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Main from "./Pages/Main/Main";
-import Register from "./Pages/Register/Register";
+import TrialClassForm from "./Pages/TrialClassForm/TrialClassForm";
 import Footer from "./Components/Footer/Footer";
 import ScrollButton from "./Components/ScrollButton";
 import Thanks from "./Pages/Thanks/Thanks";
@@ -34,7 +34,7 @@ function App() {
     <div id="home" className="App">
       {
         //Set Nav
-        checkLocation === "/register" ? (
+        checkLocation === "/trialClass" ? (
           <NavBookClass t={t} />
         ) : (
           <Nav t={t} checkLocation={checkLocation} resetScroll={resetScroll} />
@@ -42,7 +42,7 @@ function App() {
       }
       <Routes>
         <Route path="/" element={<Main t={t} />} />
-        <Route path="register" element={<Register t={t} />} />
+        <Route path="/trialClass" element={<TrialClassForm t={t} />} />
         <Route path="/thanks" element={<Thanks t={t} />} />
         <Route path="*" element={<NotFound t={t} />} />
       </Routes>

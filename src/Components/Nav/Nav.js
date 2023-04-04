@@ -49,7 +49,7 @@ const Nav = ({ checkLocation, t, resetScroll }) => {
           <div></div>
         )}
 
-        <Link to="/register" className="btn-shape purple-btn">
+        <Link to="/trialClass" className="btn-shape purple-btn">
           {bookTrialClassButton}
         </Link>
       </div>
@@ -84,7 +84,7 @@ const Nav = ({ checkLocation, t, resetScroll }) => {
               <div className="nav-links-mobile"></div>
             )}
 
-            <Link to="/register" className="btn-shape purple-btn">
+            <Link to="/trialClass" className="btn-shape purple-btn">
               {bookTrialClassButton}
             </Link>
           </div>

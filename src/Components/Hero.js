@@ -12,7 +12,7 @@ const Hero = ({ t }) => {
               Comienza la <span className="highlight">aventura</span> de aprender Español.
             </Trans>
           </h1>
-          <Link to='/register' className='btn-shape purple-btn'>{heroButton}</Link>
+          <Link to='/trialClass' className='btn-shape purple-btn'>{heroButton}</Link>
         </div>
       </section>
   )
