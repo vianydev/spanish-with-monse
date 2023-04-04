@@ -2,15 +2,16 @@ import ContactForm from "../../Components/Form/ContactForm";
 
 const Register = ({ t }) => {
   return (
-    <section id="register">
+    <section id="trialClassForm">
       <div id="form" className="register">
-        <h3>{t("register.title")}</h3>
-
-        {/* <RegisterForm /> */}
+        <div className="infoForm">
+          <h3>{t("trialClassForm.title")}</h3>
+          <p>{t("trialClassForm.description")}</p>
+        </div>
 
         <ContactForm />
 
-        <div className="login-link">
+        {/* <div className="login-link">
           <p className="terms-conditions">
             Al crear una cuenta, aceptas nuestros Términos y condiciones.
             Recibirás correos electrónicos y notificaciones de 'Spanish with
@@ -18,7 +19,7 @@ const Register = ({ t }) => {
             productos y servicios. Puedes darte de baja en cualquier momento de
             forma gratuita.
           </p>
-        </div>
+        </div> */}
       </div>
     </section>
   );

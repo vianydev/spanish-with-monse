@@ -13,9 +13,9 @@ export const esp = {
     aboutMe: "Acerca de mí",
   },
   error: "Ups, algo salió mal",
-  register: {
-    title: "Regístrate y aprende español con Monse",
-    haveAcount: "¿Ya tienes una cuenta?",
+  trialClassForm: {
+    title: "Comienza tu aventura de aprender español",
+    description: "Por favor llena el formulario y me pondré en contacto para agendar tu clase muestra.",
     terms:
       "Al crear una cuenta, aceptas nuestros Términos y condiciones . Recibirás correos electrónicos y notificaciones de Spanish with Monse  sobre el progreso de tu aprendizaje y sobre nuestros servicios. Puedes darte de baja en cualquier momento de forma gratuita. Procesaremos tus datos personales de acuerdo con nuestra Política de privacidad.",
   },

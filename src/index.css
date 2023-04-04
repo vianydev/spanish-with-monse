@@ -438,7 +438,7 @@ button,
 }
 
 /* Forms & Pages*/
-#register, 
+#trialClassForm, 
 #login {
   margin-top: 100px;
   height: 1010px;
@@ -446,6 +446,19 @@ button,
 }
 #form {
   margin: 10px;
+}
+.infoForm {
+  margin: auto;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.infoForm h3 {
+  margin: 40px 0 10px 0;
+}
+.infoForm p {
+  /* max-width: 600px; */
 }
 .login-link {
   margin: 70px 0 0 0;

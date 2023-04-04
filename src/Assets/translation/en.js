@@ -13,9 +13,9 @@ export const eng = {
     aboutMe: "About me",
   },
   error: "Ops, page not found",
-  register: {
-    title: "Sign up to start learning Spanish with Monse",
-    haveAccount: "Already have an account?",
+  trialClassForm: {
+    title: "Let's start your learning Spanish adventure",
+    description: "Please fill the form below and I will get in touch to schedule a convenient time for your trial class.",
     terms:
       "By creating an account, you agree to our Terms and Conditions . You will receive emails and notifications from Spanish with Monse about your learning progress and our services, which you can unsubscribe at any time free of charge. We will process your personal data in accordance with our Privacy policy.",
   },
