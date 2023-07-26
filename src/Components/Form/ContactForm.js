@@ -118,15 +118,12 @@ function ContactForm() {
         .then(data => {
           if (data.ok) {   
             handleServerResponse(true, "Thanks for joining! I'll send you more information about your free lesson soon!", form);
-            navigate("/SignOut");
+            navigate("/thanks");
           } else {
-            console.log('error aqui mero')
-            console.log(data.errors[ 0 ].message)
             handleServerResponse(false, data.errors[ 0 ].message, form);
           }
         })
         .catch(e => {
-          console.log(e)
           handleServerResponse(false, 'error', form);
         });
     } else if (username.includes("") || email.includes("") || selectGoal.includes("") || selectGoal.includes("select")) {

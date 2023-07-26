@@ -20,8 +20,9 @@ export const esp = {
       "Al crear una cuenta, aceptas nuestros Términos y condiciones . Recibirás correos electrónicos y notificaciones de Spanish with Monse  sobre el progreso de tu aprendizaje y sobre nuestros servicios. Puedes darte de baja en cualquier momento de forma gratuita. Procesaremos tus datos personales de acuerdo con nuestra Política de privacidad.",
   },
   thanks: {
-    title: "Gracias por registrarte",
-    info: " en breves me pondré en contacto contigo para agendar tu clase muestra."
+    title: "¡Gracias por registrarte!",
+    info: "En breves me pondré en contacto contigo para agendar tu clase muestra.",
+    back: "Regresar al inicio"
   },
   form: {
     name: "Nombre:",

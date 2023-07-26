@@ -1,4 +1,5 @@
 import ContactForm from "../../Components/Form/ContactForm";
+import { Link } from "react-router-dom";
 
 const TrialClassForm = ({ t }) => {
   return (
@@ -20,6 +21,14 @@ const TrialClassForm = ({ t }) => {
             forma gratuita.
           </p>
         </div> */}
+      </div>
+      <div style={{ margin: '30px 10px 10px 10px' }}>
+        <Link
+          to='/'
+        >
+          {t("thanks.back")}
+        </Link>
+
       </div>
     </section>
   );
