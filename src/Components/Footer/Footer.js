@@ -49,8 +49,8 @@ const Footer = ({ t }) => {
             </span>
             by{" "}
             <span>
-              <a className="footer-link" href="https://github.com/vianydev">
-                Vianydev
+              <a className="footer-link" href="https://vianydev.github.io" target="_blank" rel="noreferrer">
+                viany.dev
               </a>
             </span>
           </p>

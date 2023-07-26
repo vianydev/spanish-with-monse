@@ -369,6 +369,7 @@ button,
 
 /* Made by... */
 .footer-copyright {
+  color: var(--bg-light-purple);
   padding: 10px;
   border-top: 1px solid var(--dark-gray);
 }
@@ -387,7 +388,7 @@ button,
   padding: 0 10px;
 }
 .footer-link {
-  color: var(--green);
+  color: var(--light-purple);
 }
 .footer-heart {
   margin: 0;

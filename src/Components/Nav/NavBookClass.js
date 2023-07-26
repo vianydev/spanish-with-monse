@@ -5,12 +5,14 @@ import './Navbar.css';
 const NavBookClass = ({ t }) => {
 
     return (
-        <nav id='login-nav' >
-            {/* Desktop Nav */}
-            <Link className='nav-logo' to='/' >
-                <img src={logo} alt='logo' />
-            </Link>
-        </nav>
+        <header id='header'>
+            <nav id='login-nav' >
+                {/* Desktop Nav */}
+                <Link className='nav-logo' to='/' >
+                    <img src={logo} alt='logo' />
+                </Link>
+            </nav>
+        </header>
     )
 }
 

@@ -23,74 +23,76 @@ const Nav = ({ checkLocation, t, resetScroll }) => {
   };
 
   return (
-    <nav id="nav">
-      {/* Desktop Nav */}
-      <Link className="nav-logo" to="/" onClick={() => resetScroll()}>
-        <img src={logo} alt="logo" />
-      </Link>
+    <header id="header">
+      <nav id="nav">
+        {/* Desktop Nav */}
+        <Link className="nav-logo" to="/" onClick={() => resetScroll()}>
+          <img src={logo} alt="logo" />
+        </Link>
 
-      {checkLocation === "/" ? (
-        <div className="nav-links">
-          <a className="nav-link" href="#process">
-            {howToStart}
-          </a>
-          <a className="nav-link" href="#about-me">
-            {aboutMe}
-          </a>
-        </div>
-      ) : (
-        <div></div>
-      )}
-
-      <div className="nav-buttons">
         {checkLocation === "/" ? (
-          <TranslateButton id={"toggle-translate"} />
+          <div className="nav-links">
+            <a className="nav-link" href="#process">
+              {howToStart}
+            </a>
+            <a className="nav-link" href="#about-me">
+              {aboutMe}
+            </a>
+          </div>
         ) : (
           <div></div>
         )}
 
-        <Link to="/trialClass" className="btn-shape purple-btn">
-          {bookTrialClassButton}
-        </Link>
-      </div>
+        <div className="nav-buttons">
+          {checkLocation === "/" ? (
+            <TranslateButton id={"toggle-translate"} />
+          ) : (
+            <div></div>
+          )}
 
-      {/* Nav for mobile */}
-      <div className="nav-mobile">
-        <img
-          className="nav-mobile-btn"
-          src={iconHamburger}
-          alt="hamburger-button"
-          onClick={showNavMobile}
-        />
+          <Link to="/trialClass" className="btn-shape purple-btn">
+            {bookTrialClassButton}
+          </Link>
+        </div>
 
-        <div id="toggle-nav" className="nav-mobile-menu">
-          <div className="nav-mobile-menu-content">
-            <TranslateButton id={"toggle-translate-mobile"} />
+        {/* Nav for mobile */}
+        <div className="nav-mobile">
+          <img
+            className="nav-mobile-btn"
+            src={iconHamburger}
+            alt="hamburger-button"
+            onClick={showNavMobile}
+          />
 
-            {checkLocation === "/" ? (
-              <div className="nav-links-mobile">
-                <a className="nav-link" href="#process" onClick={showNavMobile}>
-                  {howToStart}
-                </a>
-                <a
-                  className="nav-link"
-                  href="#about-me"
-                  onClick={showNavMobile}
-                >
-                  {aboutMe}
-                </a>
-              </div>
-            ) : (
-              <div className="nav-links-mobile"></div>
-            )}
+          <div id="toggle-nav" className="nav-mobile-menu">
+            <div className="nav-mobile-menu-content">
+              <TranslateButton id={"toggle-translate-mobile"} />
 
-            <Link to="/trialClass" className="btn-shape purple-btn">
-              {bookTrialClassButton}
-            </Link>
+              {checkLocation === "/" ? (
+                <div className="nav-links-mobile">
+                  <a className="nav-link" href="#process" onClick={showNavMobile}>
+                    {howToStart}
+                  </a>
+                  <a
+                    className="nav-link"
+                    href="#about-me"
+                    onClick={showNavMobile}
+                  >
+                    {aboutMe}
+                  </a>
+                </div>
+              ) : (
+                <div className="nav-links-mobile"></div>
+              )}
+
+              <Link to="/trialClass" className="btn-shape purple-btn">
+                {bookTrialClassButton}
+              </Link>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
   );
 };
 
