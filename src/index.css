@@ -14,7 +14,8 @@
   --yellow: #FEE52C;
   --white: #FFFFFF;
   --light-gray: #f6f6f6;
-  --gray: #fafafa;
+  --gray: #807e7e;
+  --contrast-gray: #5e5d5d;
   --dark-gray: #0e0e0e;
   --black: #0e0e0ee7;
   --black-alpha: #0e0e0e46;
@@ -120,7 +121,7 @@ button,
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 12px 30px;
+  padding: 15px 30px;
   /* gap: 5px; */
   /* margin: 0 5px; */
 

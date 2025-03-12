@@ -29,12 +29,10 @@
     padding: 0px 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
+    justify-content: center;
     
     border-radius: 10px;
     background-color: var(--white);
-    /* box-shadow: var(--shadow1); */
   }
   .beneficios-box p, 
   .beneficios-box h4 {
@@ -49,9 +47,13 @@
     display: none;
   }
   .beneficios-img {
-    width: 60px;
-    height: 60px;
-    background: var(--dark-gray);
+   display: flex;
+   align-items: flex-start;
+  }
+  .beneficios-img svg{
+    width: 30px;
+    height: 30px;
+    color: var(--green);
     border-radius: 50%;
 
     display: flex;
@@ -59,7 +61,7 @@
     align-items: center;
   }
   .icon-beneficios {
-    height: 30px;
+    height: 20px;
     color: var(--white);
   }
   
