@@ -340,6 +340,8 @@ button,
   }
   .hero-container {
     flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
   }
   .hero-content {
     margin: 0;
