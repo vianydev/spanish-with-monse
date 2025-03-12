@@ -345,9 +345,6 @@ button,
     align-items: start;
     text-align: start;
   }
-  .hero-content h1 {
-    font-size: 4rem;
-  }
   .hero-content .btn-mobile {
     display: block;
   }
@@ -359,9 +356,12 @@ button,
   }
 }
 @media only screen and (min-width: 1400px){
-  .hero-content {
+  .hero-container {
     width: 80%;
     margin: 0 auto;
+  }
+  .hero-content h1 {
+    font-size: 4rem;
   }
 }
 @media only screen and (min-width: 1800px){
