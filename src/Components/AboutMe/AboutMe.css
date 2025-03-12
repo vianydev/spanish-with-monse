@@ -15,7 +15,7 @@
 
     background-color: var(--bg-light-gray);
     border-radius: 10px;
-    box-shadow: var(--shadow2);
+    /* box-shadow: var(--shadow2); */
 }
 .about-me-text {
     width: 90%;
@@ -38,6 +38,10 @@
     line-height: 1.7;
 }
 
+.about-me-picture img {
+    max-width: 380px;
+}
+
 @media only screen and (min-width: 620px){
     .about-me-text h2 {
         max-width: 50%;
@@ -48,6 +52,10 @@
         margin: 50px 60px;
         display: flex;
         justify-content: space-evenly;
+    }
+    .about-me-picture img {
+        max-width: 300px;
+        margin: 0 20px 0 0;
     }
 }
 @media only screen and (min-width: 650px){

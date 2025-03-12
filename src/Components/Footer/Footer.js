@@ -1,8 +1,8 @@
-import logoFooter from "../../Assets/images/logo-white.png";
+// import logoFooter from "../../Assets/images/logo-white.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
+// import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import TranslateButton from "../TranslateButton";
 
 const Footer = ({ t }) => {
@@ -10,7 +10,8 @@ const Footer = ({ t }) => {
     <section id="footer">
       <div className="footer-box">
         <a className="logo-footer" href="/">
-          <img src={logoFooter} alt="Spanish with Monse Logo" width="150px" />
+          {/* <img src={logoFooter} alt="Spanish with Monse Logo" width="150px" /> */}
+          spanish with monse
         </a>
 
         <div className="social-icons-footer">
@@ -40,17 +41,8 @@ const Footer = ({ t }) => {
       <div className="footer-copyright">
         <div className="footer-text">
           <p>
-            Made with{" "}
-            <span>
-              <FontAwesomeIcon
-                className="fa-social-icon footer-heart"
-                icon={faHeart}
-              />{" "}
-            </span>
-            by{" "}
-            <span>
-              <a className="footer-link" href="https://vianydev.github.io" target="_blank" rel="noreferrer">
-                viany.dev
+            Hecho con café y código por <span><a className="footer-link" href="https://flatlatte.com" target="_blank" rel="noreferrer">
+                @vianydev
               </a>
             </span>
           </p>

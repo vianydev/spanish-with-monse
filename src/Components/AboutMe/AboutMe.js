@@ -1,8 +1,8 @@
 import './AboutMe.css';
-import profilePicture from "../../Assets/images/profile-circulo.png";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import profilePicture from "../../Assets/images/profile-2.jpg";
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+// import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { Trans } from 'react-i18next';
 import { t } from 'i18next';
 
@@ -27,7 +27,7 @@ const AboutMe = () => {
             </div>
           </div>
 
-          <div className='social-icons'>
+          {/* <div className='social-icons'>
             <a className='social-link' 
               href='mailto:smonse.rr@gmail.com'>
               <div className='social-icon'>
@@ -43,7 +43,7 @@ const AboutMe = () => {
                 <p className='social-text'>+521 921 144 6166</p>
               </div>
             </a>
-          </div>
+          </div> */}
         </div>
       </section>
   )

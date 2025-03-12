@@ -12,13 +12,12 @@ const Beneficios = ({ t }) => {
 
   return (
     <section id="beneficios">
-      <div className="line-top"></div>
       <div className="beneficios-container">
-        <h3>
+        <h2>
           <Trans i18nKey='main.benefits.title'>
             Disfruta de los <span className="highlight">beneficios</span> de aprender Español con clases privadas en línea.
           </Trans>
-        </h3>
+        </h2>
         
 
         <div className="beneficios-box-container">
@@ -85,7 +84,7 @@ const Beneficios = ({ t }) => {
         </div>
 
       </div>
-      <div className="line-bottom"></div>
+      {/* <div className="line-bottom"></div> */}
     </section>
   )
 }

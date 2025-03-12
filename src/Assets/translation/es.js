@@ -107,7 +107,7 @@ export const esp = {
       hello: "¡Hola!",
       myName: "Mi nombre es Monserrat, pero puedes decirme Monse.",
       content:
-        "Soy mexicana y he sido profesora de español para extranjeros y nativos por más de 6 años. Una de las cosas que más disfruto es conocer estudiantes de diferentes países y ayudarlos en la aventura de aprender un nuevo idioma.",
+        "Soy mexicana y he sido profesora de español para extranjeros y nativos por más de 8 años. Una de las cosas que más disfruto es conocer estudiantes de diferentes países y ayudarlos en la aventura de aprender un nuevo idioma.",
     },
   },
 };

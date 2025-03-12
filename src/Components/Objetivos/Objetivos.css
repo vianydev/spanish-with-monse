@@ -8,27 +8,29 @@
     align-items: center;
 }
 .objetivos-container h3 {
-    max-width: 600px;
-    margin: auto;
+    margin: 0 auto;
+    width: 90%;
+    font-family: var(--general-font);
+    font-size: 1.2rem;
 }
 .objetivos-title {
     max-width: 500px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 .objetivos-box {
     margin: 10px;
 
-    background: var(--gradient);
-    padding: 3px;
+    background: var(--dark-gray);
+    padding: 2px;
     border-radius: 10px;
-    box-shadow: var(--shadow1);
+    /* box-shadow: var(--shadow1); */
 }
 .objetivos-box-content {
     width: 330px;
     height: 480px;
     border-radius: 8px;
     
-    background-color: white;
+    background-color: var(--white);
 
     display: flex;
     flex-direction: column;
@@ -46,7 +48,7 @@
     height: 80px;
     margin-bottom: 10px;
 
-    background: var(--gradient-vertical);
+    background: var(--green);
     border-radius: 50%;
 
     display: flex;
@@ -55,7 +57,7 @@
   }
 .icon-objetivos {
 height: 30px;
-color: white;
+color: var(--white);
 pointer-events: none;
 }
 .objetivos-text {

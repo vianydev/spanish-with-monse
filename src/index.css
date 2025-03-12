@@ -1,8 +1,8 @@
 :root {
-  --green: #02C9B7;
-  --purple: #7060C1;
+  --green: #3cdaaf;
+  --purple: #9d6eff;
   --bg-light-green: #E6FAF8;
-  --bg-light-purple: #F2EFFF;
+  --bg-light-purple: #f2efff63;
   --bg-light-gray: #F4F4F4;
   --pink: #9A348E;
   --light-pink: #E5B3DF;
@@ -13,27 +13,31 @@
   --dark-purple: #5543AC;
   --yellow: #FEE52C;
   --white: #FFFFFF;
-  --light-gray: #F4F4F4;
-  --gray: #666969;
-  --dark-gray: #2C403D;
-  --black: #1A2523;
-  --gradient: linear-gradient(90deg, #02C9B7 0%, #7060C1 100%);
+  --light-gray: #f6f6f6;
+  --gray: #fafafa;
+  --dark-gray: #0e0e0e;
+  --black: #0e0e0ee7;
+  --black-alpha: #0e0e0e46;
+  --gradient: linear-gradient(30deg, #d5c4ff 0%, #9e70ff 100%);
+  
   --gradient-dark: linear-gradient(90deg, #01655C 0%, #7060C1 100%);
   --grandient-light: linear-gradient(90deg, rgba(1, 101, 92, 0.8) 0%, #7060C1 100%);
   --gradient-vertical: linear-gradient(180deg, #02C9B7 0%, #7060C1 100%);
   --gradient-vdark: linear-gradient(180deg, #01655C 0%, #7060C1 100%);
   --grandient-vlight: linear-gradient(180deg, rgba(1, 101, 92, 0.8) 0%, #7060C1 100%);
-  --shadow1: 0px 2px 8px rgba(0, 0, 0, 0.25);
+  --shadow1: 0px 2px 8px rgba(0, 0, 0, 0.05);
   --shadow2: 0px 4px 10px rgba(0, 0, 0, 0.15);
   --shadow-solid: 0px 2px 0px rgba(0, 0, 0, 0.1);
   --error: #d65454;
+  --title-font: 'Merriweather', serif;
+  --general-font: 'Open Sans', sans-serif;
 }
 ::selection {
-  background: var(#02c9b859);
+  background-color: var(--yellow);
 }
 html, 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--general-font);
   font-size: 14px;
   color: var(--dark-gray);
   margin: 0;
@@ -54,7 +58,7 @@ h2,
 h4,
 .process-number,
 .process-text {
-  font-weight: 900;
+  font-weight: 500;
 }
 h5, 
 h6,
@@ -67,7 +71,7 @@ h1,
   font-size: 3.5rem;
 }
 h2 {
-  font-size: 2.25rem;
+  font-size: 2rem;
 }
 h3 {
   font-size: 1.6rem;
@@ -117,20 +121,20 @@ button,
   flex-direction: row;
   align-items: center;
   padding: 12px 30px;
-  gap: 5px;
-  margin: 0 5px;
+  /* gap: 5px; */
+  /* margin: 0 5px; */
 
-  color: white;
+  color: var(--white);
   box-shadow: var(--shadow1);
   border-radius: 35px;
   border: none;
 
   font-family: 'Open Sans';
-  font-weight: 700;
-  font-size: 14px;
+  font-weight: 400;
+  font-size: 12px;
   text-transform: uppercase;
   cursor: pointer;
-  transition: all .3s;
+  transition: all .3s ease-in-out;
 }
 .purple-btn{
   background-color: var(--purple);
@@ -140,9 +144,18 @@ button,
   background-color: var(--pink);
   border: 2px solid var(--pink);
 }
+.green-btn {
+  background-color: var(--green);
+  border: 2px solid var(--green);
+}
 .outline-purple {
   border: 2px solid var(--purple);
   color: var(--purple);
+  background: transparent;
+}
+.outline-green {
+  border: 2px solid var(--green);
+  color: var(--green);
   background: transparent;
 }
 .link-purple {
@@ -183,6 +196,11 @@ button,
   border: 2px solid var(--pink);
   color: var(--pink);
   background: transparent;
+}
+.green-btn:hover {
+  border: 2px solid var(--white);
+  color: var(--green);
+  background: var(--white);
 }
 .outline-purple:hover {
   border: 2px solid var(--purple);
@@ -274,32 +292,82 @@ button,
   }
 }
 
+.section {
+  margin: 0 10px;
+}
+
+
 /* Hero */
 #hero {
+  width: 100%;
+}
+
+.hero-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  height: 100vh;
 }
 .hero-content {
-  margin: 10px;
-  max-width: 450px;
-  height: 700px;
+  width: 100%;
+  margin: 250px 0 0 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.hero-content h1 {
-  margin-top: 0px;
   text-align: center;
 }
-@media only screen and (min-width: 650px){
+.hero-content h1 {
+  margin: 0 0 20px 0;
+  font-size: 3rem;
+}
+.hero-content .btn-mobile {
+  display: none;
+  margin: 0;
+}
+.hero-img{
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  background: url("./Assets/images/hero-mobile.png") no-repeat top;
+  background-size: contain;
+}
+
+@media only screen and (min-width: 580px){
+  .section {
+    margin: 0px 20px;
+  }
+  .hero-container {
+    flex-direction: row;
+  }
   .hero-content {
-    max-width: 810px;
+    margin: 0;
+    align-items: start;
+    text-align: start;
+  }
+  .hero-content h1 {
+    font-size: 4rem;
+  }
+  .hero-content .btn-mobile {
+    display: block;
+  }
+  .hero-img {
+    height: 100vh;
+    width: 100%;
+    background: url("./Assets/images/hero.png") no-repeat center;
+    background-size: contain;
   }
 }
-@media only screen and (min-width: 990px){
+@media only screen and (min-width: 1400px){
   .hero-content {
-    max-width: 950px;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 1800px){
+  .hero-content {
+    width: 50%;
+    margin: 0 auto;
   }
 }
 
@@ -332,8 +400,19 @@ button,
 
 /* Footer */
 #footer {
-  background: var(--black);
+  background: var(--dark-gray);
 }
+.logo-footer {
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.logo-footer:hover {
+  color: var(--green);
+}
+
 .footer-container {
   padding: 10px;
 }
@@ -341,7 +420,7 @@ button,
   height: 300px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 .nav-footer {
@@ -352,7 +431,7 @@ button,
 }
 .nav-footer a {
   padding: 5px;
-  color: var(--bg-light-green);
+  color: var(--green);
 }
 .logo-footer {
   margin: 0 auto;
@@ -360,11 +439,15 @@ button,
 .logo-footer:hover {
   filter: invert(18%) sepia(22%) saturate(589%) hue-rotate(121deg) brightness(98%) contrast(85%);
 }
+
+.social-icons-footer{
+  margin: 30px 0 20px 0;
+}
 .social-icons-footer svg {
-  color: var(--bg-light-green);
+  color: var(--white);
 }
 .social-icons-footer svg:hover {
-  color: var(--dark-green);
+  color: var(--green);
 }
 
 /* Made by... */
@@ -401,7 +484,7 @@ button,
     height: auto;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: flex-start;
+    align-items: center;
   }
   .nav-footer {
     align-items: flex-start;

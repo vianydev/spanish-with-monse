@@ -28,7 +28,7 @@ const Process = ({ t }) => {
             </div>
           </div>
         </div>
-        <div className="line-bottom"></div>
+        {/* <div className="line-bottom"></div> */}
       </section>
   )
 }

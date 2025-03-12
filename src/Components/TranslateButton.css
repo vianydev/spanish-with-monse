@@ -7,12 +7,13 @@
 .dropbtn {
   text-align: center;
   padding: 4px 16px;
+  font-size: 1rem;
 
-  background: white;
+  background: var(--white);
   color: var(--dark-gray);
 
   text-transform: unset;
-  font-weight: 400;
+  /* font-weight: 400; */
 
   border: solid 1px var(--light-gray);
   border-radius: 10px;
@@ -25,14 +26,19 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: var(--light-gray);
+  background-color: var(--white);
   min-width: 115px;
   border-radius: 10px;
   box-shadow: var(--shadow-solid);
   z-index: 1;
+  border: solid 1px var(--light-gray);
 }
+.dropdown-content p {
+  color: var(--dark-gray);
+}
+
 .dropdown-content p:active {
-  color: var(--dark-green);
+  color: var(--dark-gray);
   background-color: var(--bg-light-purple);
   border-radius: 10px;
 }
